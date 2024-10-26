@@ -6,11 +6,11 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
-        <Name>Data Structures</Name>
+        <Name>Structures de données</Name>
         <Path>annotated.html</Path>
       <Subnodes>
          <Node>
-          <Name>Data Structures</Name>
+          <Name>Structures de données</Name>
           <Path>annotated.html</Path>
         <Subnodes>
            <Node>
@@ -111,15 +111,15 @@
           </Subnodes>
          </Node>
          <Node>
-          <Name>Data Structure Index</Name>
+          <Name>Index des structures de données</Name>
           <Path>classes.html</Path>
          </Node>
          <Node>
-          <Name>Data Fields</Name>
+          <Name>Champs de donnée</Name>
           <Path>functions.html</Path>
         <Subnodes>
            <Node>
-            <Name>All</Name>
+            <Name>Tout</Name>
             <Path>functions.html</Path>
            </Node>
            <Node>
@@ -131,11 +131,11 @@
         </Subnodes>
        </Node>
        <Node>
-        <Name>Files</Name>
+        <Name>Fichiers</Name>
         <Path>files.html</Path>
       <Subnodes>
          <Node>
-          <Name>File List</Name>
+          <Name>Liste des fichiers</Name>
           <Path>files.html</Path>
         <Subnodes>
            <Node>
@@ -475,19 +475,9 @@
                 <Anchor>a3ddbb3eacacb940195c521d53f655c1e</Anchor>
                </Node>
                <Node>
-                <Name>foreachInsert</Name>
-                <Path>d7/d40/list_8c.html</Path>
-                <Anchor>a4412ed3b120034eba3b2fd205fc87cec</Anchor>
-               </Node>
-               <Node>
                 <Name>freeList</Name>
                 <Path>d7/d40/list_8c.html</Path>
                 <Anchor>ab1d90f58a3246b8683314ed868fdbe46</Anchor>
-               </Node>
-               <Node>
-                <Name>isPresent</Name>
-                <Path>d7/d40/list_8c.html</Path>
-                <Anchor>a15e096dc261e6a54bf439889fc25ba58</Anchor>
                </Node>
                <Node>
                 <Name>printList</Name>
@@ -532,11 +522,6 @@
                 <Anchor>a3ddbb3eacacb940195c521d53f655c1e</Anchor>
                </Node>
                <Node>
-                <Name>foreachInsert</Name>
-                <Path>da/d23/list_8h.html</Path>
-                <Anchor>a4412ed3b120034eba3b2fd205fc87cec</Anchor>
-               </Node>
-               <Node>
                 <Name>freeList</Name>
                 <Path>da/d23/list_8h.html</Path>
                 <Anchor>ab1d90f58a3246b8683314ed868fdbe46</Anchor>
@@ -553,9 +538,9 @@
               <Path>de/d26/segmentation_8c.html</Path>
             <Subnodes>
                <Node>
-                <Name>graphToImage</Name>
+                <Name>ccToImage</Name>
                 <Path>de/d26/segmentation_8c.html</Path>
-                <Anchor>a0dfe55ed6c016428b3ac59950a6195cd</Anchor>
+                <Anchor>a372aaad7a874642d95c621544dd4d988</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -564,9 +549,9 @@
               <Path>d8/d65/segmentation_8h.html</Path>
             <Subnodes>
                <Node>
-                <Name>graphToImage</Name>
+                <Name>ccToImage</Name>
                 <Path>d8/d65/segmentation_8h.html</Path>
-                <Anchor>a0dfe55ed6c016428b3ac59950a6195cd</Anchor>
+                <Anchor>a372aaad7a874642d95c621544dd4d988</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -928,9 +913,9 @@
                 <Anchor>afe5d0ba8d62bd2fff1c3606e7cfd915d</Anchor>
                </Node>
                <Node>
-                <Name>fastImageToGraph</Name>
+                <Name>fastImageToCC</Name>
                 <Path>d8/d27/transform_8c.html</Path>
-                <Anchor>a6a1a4263a4ccde0d11450117120ae1cb</Anchor>
+                <Anchor>a1d2f6d8fe0692148e470c7d6a08b3196</Anchor>
                </Node>
                <Node>
                 <Name>getEdgeNotSeenTransform</Name>
@@ -954,9 +939,9 @@
               <Path>d2/d80/transform_8h.html</Path>
             <Subnodes>
                <Node>
-                <Name>fastImageToGraph</Name>
+                <Name>fastImageToCC</Name>
                 <Path>d2/d80/transform_8h.html</Path>
-                <Anchor>a6a1a4263a4ccde0d11450117120ae1cb</Anchor>
+                <Anchor>a1d2f6d8fe0692148e470c7d6a08b3196</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -992,15 +977,15 @@
           </Subnodes>
          </Node>
          <Node>
-          <Name>Globals</Name>
+          <Name>Variables globale</Name>
           <Path>globals.html</Path>
         <Subnodes>
            <Node>
-            <Name>All</Name>
+            <Name>Tout</Name>
             <Path>globals.html</Path>
            </Node>
            <Node>
-            <Name>Functions</Name>
+            <Name>Fonctions</Name>
             <Path>globals_func.html</Path>
            </Node>
            <Node>
@@ -1008,11 +993,11 @@
             <Path>globals_vars.html</Path>
            </Node>
            <Node>
-            <Name>Typedefs</Name>
+            <Name>Définitions de type</Name>
             <Path>globals_type.html</Path>
            </Node>
            <Node>
-            <Name>Enumerator</Name>
+            <Name>Valeurs énumérées</Name>
             <Path>globals_eval.html</Path>
            </Node>
            <Node>

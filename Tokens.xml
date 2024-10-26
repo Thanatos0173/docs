@@ -252,6 +252,26 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>ccToImage</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>de/d26/segmentation_8c.html</Path>
+    <Anchor>a372aaad7a874642d95c621544dd4d988</Anchor>
+    <DeclaredIn>segmentation.c</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>ccToImage</Name>
+      <APILanguage>c</APILanguage>
+      <Type>func</Type>
+    </TokenIdentifier>
+    <Path>d8/d65/segmentation_8h.html</Path>
+    <Anchor>a372aaad7a874642d95c621544dd4d988</Anchor>
+    <DeclaredIn>segmentation.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>Clin</Name>
       <APILanguage>c</APILanguage>
       <Type>func</Type>
@@ -362,43 +382,23 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>fastImageToGraph</Name>
+      <Name>fastImageToCC</Name>
       <APILanguage>c</APILanguage>
       <Type>func</Type>
     </TokenIdentifier>
     <Path>d8/d27/transform_8c.html</Path>
-    <Anchor>a6a1a4263a4ccde0d11450117120ae1cb</Anchor>
+    <Anchor>a1d2f6d8fe0692148e470c7d6a08b3196</Anchor>
     <DeclaredIn>transform.c</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>fastImageToGraph</Name>
+      <Name>fastImageToCC</Name>
       <APILanguage>c</APILanguage>
       <Type>func</Type>
     </TokenIdentifier>
     <Path>d2/d80/transform_8h.html</Path>
-    <Anchor>a6a1a4263a4ccde0d11450117120ae1cb</Anchor>
+    <Anchor>a1d2f6d8fe0692148e470c7d6a08b3196</Anchor>
     <DeclaredIn>transform.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>foreachInsert</Name>
-      <APILanguage>c</APILanguage>
-      <Type>func</Type>
-    </TokenIdentifier>
-    <Path>d7/d40/list_8c.html</Path>
-    <Anchor>a4412ed3b120034eba3b2fd205fc87cec</Anchor>
-    <DeclaredIn>list.c</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>foreachInsert</Name>
-      <APILanguage>c</APILanguage>
-      <Type>func</Type>
-    </TokenIdentifier>
-    <Path>da/d23/list_8h.html</Path>
-    <Anchor>a4412ed3b120034eba3b2fd205fc87cec</Anchor>
-    <DeclaredIn>list.h</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -529,36 +529,6 @@
     <Path>d1/d2a/graph_8c.html</Path>
     <Anchor>aac57902b8ae76925b8b7a979c1761b9b</Anchor>
     <DeclaredIn>graph.c</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>graphToImage</Name>
-      <APILanguage>c</APILanguage>
-      <Type>func</Type>
-    </TokenIdentifier>
-    <Path>de/d26/segmentation_8c.html</Path>
-    <Anchor>a0dfe55ed6c016428b3ac59950a6195cd</Anchor>
-    <DeclaredIn>segmentation.c</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>graphToImage</Name>
-      <APILanguage>c</APILanguage>
-      <Type>func</Type>
-    </TokenIdentifier>
-    <Path>d8/d65/segmentation_8h.html</Path>
-    <Anchor>a0dfe55ed6c016428b3ac59950a6195cd</Anchor>
-    <DeclaredIn>segmentation.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>isPresent</Name>
-      <APILanguage>c</APILanguage>
-      <Type>func</Type>
-    </TokenIdentifier>
-    <Path>d7/d40/list_8c.html</Path>
-    <Anchor>a15e096dc261e6a54bf439889fc25ba58</Anchor>
-    <DeclaredIn>list.c</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>

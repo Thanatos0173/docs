@@ -6,6 +6,5 @@ var searchData=
   ['getneighboursnumber_3',['getNeighboursNumber',['../d1/d2a/graph_8c.html#aac57902b8ae76925b8b7a979c1761b9b',1,'graph.c']]],
   ['graph_4',['graph',['../d5/d15/structgraph.html',1,'graph'],['../d5/d15/structgraph.html#ac069107cc53ea679a7732b6097f28546',1,'graph::graph()']]],
   ['graph_2ec_5',['graph.c',['../d1/d2a/graph_8c.html',1,'']]],
-  ['graph_2eh_6',['graph.h',['../d6/df3/graph_8h.html',1,'']]],
-  ['graphtoimage_7',['graphToImage',['../de/d26/segmentation_8c.html#a0dfe55ed6c016428b3ac59950a6195cd',1,'graphToImage(cc *l, int height, int width, const image *im, int doVerbose):&#160;segmentation.c'],['../d8/d65/segmentation_8h.html#a0dfe55ed6c016428b3ac59950a6195cd',1,'graphToImage(cc *l, int height, int width, const image *im, int doVerbose):&#160;segmentation.c']]]
+  ['graph_2eh_6',['graph.h',['../d6/df3/graph_8h.html',1,'']]]
 ];
