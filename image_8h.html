@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/image.h File Reference</title>
+<title>Image Segmentation: types/image.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -101,20 +100,26 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structimage.html">image</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette structure représente une image.  <a href="structimage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af258201ae5a443469cd1e09db0cc7243" id="r_af258201ae5a443469cd1e09db0cc7243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage.html">image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af258201ae5a443469cd1e09db0cc7243">createUnifiedImage</a> (int height, int width, int channels, unsigned int color)</td></tr>
+<tr class="memdesc:af258201ae5a443469cd1e09db0cc7243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une image.  <br /></td></tr>
 <tr class="separator:af258201ae5a443469cd1e09db0cc7243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae21ed0cca7a53192b45fce5407caffa3" id="r_ae21ed0cca7a53192b45fce5407caffa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae21ed0cca7a53192b45fce5407caffa3">freeImage</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>)</td></tr>
+<tr class="memdesc:ae21ed0cca7a53192b45fce5407caffa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère l'espace mémoire occupé par une image.  <br /></td></tr>
 <tr class="separator:ae21ed0cca7a53192b45fce5407caffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7713f051aa37f883725048cd6fd0b2b1" id="r_a7713f051aa37f883725048cd6fd0b2b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7713f051aa37f883725048cd6fd0b2b1">writeImage</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, char *type, char *path)</td></tr>
+<tr class="memdesc:a7713f051aa37f883725048cd6fd0b2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enregistre une image en local.  <br /></td></tr>
 <tr class="separator:a7713f051aa37f883725048cd6fd0b2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3633a342fbe9b6236f02328017b72875" id="r_a3633a342fbe9b6236f02328017b72875"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage.html">image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3633a342fbe9b6236f02328017b72875">loadImage</a> (char *path)</td></tr>
+<tr class="memdesc:a3633a342fbe9b6236f02328017b72875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge une image.  <br /></td></tr>
 <tr class="separator:a3633a342fbe9b6236f02328017b72875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab30bc8355dc38fc9d8c9eb10da2073bd" id="r_ab30bc8355dc38fc9d8c9eb10da2073bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab30bc8355dc38fc9d8c9eb10da2073bd">similarity</a> (const <a class="el" href="structimage.html">image</a> *image1, const <a class="el" href="structimage.html">image</a> *image2)</td></tr>
-<tr class="separator:ab30bc8355dc38fc9d8c9eb10da2073bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00125766da7b1465a7f761d65c1da678" id="r_a00125766da7b1465a7f761d65c1da678"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00125766da7b1465a7f761d65c1da678">similarity</a> (const <a class="el" href="structimage.html">image</a> *image1, const <a class="el" href="structimage.html">image</a> *image2)</td></tr>
+<tr class="memdesc:a00125766da7b1465a7f761d65c1da678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule à quel point deux images sont similaires.  <br /></td></tr>
+<tr class="separator:a00125766da7b1465a7f761d65c1da678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af258201ae5a443469cd1e09db0cc7243" name="af258201ae5a443469cd1e09db0cc7243"></a>
@@ -146,6 +151,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Crée une image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>La hauteur de l'image </td></tr>
+    <tr><td class="paramname">width</td><td>La largeur de l'image </td></tr>
+    <tr><td class="paramname">channels</td><td>Le nombre de canaux de l'image </td></tr>
+    <tr><td class="paramname">color</td><td>La couleur de fond de l'image, sous la forme hexadécimale : <code>#RRGGBB(AA)</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">image*</td><td>Un pointeur vers l'image </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ae21ed0cca7a53192b45fce5407caffa3" name="ae21ed0cca7a53192b45fce5407caffa3"></a>
@@ -162,6 +184,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Libère l'espace mémoire occupé par une image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Un pointeur vers une image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -180,16 +210,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Charge une image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Le chemin vers l'image à charger </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">image*</td><td>Un pointeur vers la structure image représentant l'image chargée </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ab30bc8355dc38fc9d8c9eb10da2073bd" name="ab30bc8355dc38fc9d8c9eb10da2073bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab30bc8355dc38fc9d8c9eb10da2073bd">&#9670;&#160;</a></span>similarity()</h2>
+<a id="a00125766da7b1465a7f761d65c1da678" name="a00125766da7b1465a7f761d65c1da678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00125766da7b1465a7f761d65c1da678">&#9670;&#160;</a></span>similarity()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double similarity </td>
+          <td class="memname">double * similarity </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structimage.html">image</a> *</td>          <td class="paramname"><span class="paramname"><em>image1</em></span>, </td>
         </tr>
@@ -200,6 +244,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calcule à quel point deux images sont similaires. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image1</td><td>Un pointeur vers une image à comparer </td></tr>
+    <tr><td class="paramname">image2</td><td>Un pointeur vers une image à comparer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">double*</td><td>Un tableau contenant laa moyenne de différence de couleur de chaque image et la pire similarité possible pour cette image. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -226,6 +285,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enregistre une image en local. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Un pointeur vers une image </td></tr>
+    <tr><td class="paramname">type</td><td>Le type de l'image. Le seul type pleinement supporté actuellement est le <code>.png</code> </td></tr>
+    <tr><td class="paramname">path</td><td>Le chemin vers lequel l'image devrait être enregistré. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

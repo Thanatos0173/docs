@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/conversion.c File Reference</title>
+<title>Image Segmentation: types/conversion.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -105,8 +104,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a00fb3f36cf9ec4b288076b9730e75875" id="r_a00fb3f36cf9ec4b288076b9730e75875"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00fb3f36cf9ec4b288076b9730e75875">Clin</a> (float C)</td></tr>
 <tr class="separator:a00fb3f36cf9ec4b288076b9730e75875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af15957b36f0e597965699dc2f80538cb" id="r_af15957b36f0e597965699dc2f80538cb"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15957b36f0e597965699dc2f80538cb">rgbToLAB</a> (int R, int G, int B)</td></tr>
+<tr class="memdesc:af15957b36f0e597965699dc2f80538cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforme un triplet RGB en L*a*b*.  <br /></td></tr>
 <tr class="separator:af15957b36f0e597965699dc2f80538cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360dc2d600ad4b61f7af972b7bb1bc98" id="r_a360dc2d600ad4b61f7af972b7bb1bc98"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360dc2d600ad4b61f7af972b7bb1bc98">delta</a> (int r1, int g1, int b1, int r2, int g2, int b2)</td></tr>
+<tr class="memdesc:a360dc2d600ad4b61f7af972b7bb1bc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la différence de couleur de 2 pixelx.  <br /></td></tr>
 <tr class="separator:a360dc2d600ad4b61f7af972b7bb1bc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -166,6 +167,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Calcule la différence de couleur de 2 pixelx. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r1</td><td>Le rouge d'un pixel RGB </td></tr>
+    <tr><td class="paramname">g1</td><td>Le vert d'un pixel RGB </td></tr>
+    <tr><td class="paramname">b1</td><td>Le bleu d'un pixel RGB </td></tr>
+    <tr><td class="paramname">r2</td><td>Le rouge d'un pixel RGB </td></tr>
+    <tr><td class="paramname">g2</td><td>Le vert d'un pixel RGB </td></tr>
+    <tr><td class="paramname">b2</td><td>Le bleu d'un pixel RGB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float</td><td>La différence de couleur entre <code>(r1, g1, b1)</code> et <code>(r2, g2, b2)</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a889ebfbe2fde8ad76119cf5eb9da186e" name="a889ebfbe2fde8ad76119cf5eb9da186e"></a>
@@ -208,6 +228,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Transforme un triplet RGB en L*a*b*. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>Le rouge d'un pixel RGB </td></tr>
+    <tr><td class="paramname">G</td><td>Le vert d'un pixel RGB </td></tr>
+    <tr><td class="paramname">B</td><td>Le bleu d'un pixel RGB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float*</td><td>Un tableau de taille 3, contenant le L*, a* et b* de la couleur passé en argument. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

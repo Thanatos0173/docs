@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/graph.h Source File</title>
+<title>Image Segmentation: types/graph.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -95,34 +94,36 @@ $(function(){ initResizable(false); });
 <a href="graph_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GRAPH_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GRAPH_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structgraph.html">    8</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structgraph.html#a1886eee83ecdda7ec0304c751f8177d9">   10</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structgraph.html#a1886eee83ecdda7ec0304c751f8177d9">size</a>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structgraph.html#a0f4a400141371e971f124319d76b0f6c">   11</a></span>  <span class="keywordtype">int</span>** <a class="code hl_variable" href="structgraph.html#a0f4a400141371e971f124319d76b0f6c">graph</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>} <a class="code hl_struct" href="structgraph.html">graph</a>;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structgraph.html">   17</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structgraph.html#a1886eee83ecdda7ec0304c751f8177d9">   19</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structgraph.html#a1886eee83ecdda7ec0304c751f8177d9">size</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structgraph.html#ac069107cc53ea679a7732b6097f28546">   20</a></span>  <span class="keywordtype">int</span>** <a class="code hl_variable" href="structgraph.html#ac069107cc53ea679a7732b6097f28546">graph</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <a class="code hl_struct" href="structgraph.html">graph</a>;</div>
 </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_function" href="graph_8h.html#a6cf57aa120220ea918d655c079d0092c">createGraph</a>(<span class="keywordtype">int</span> size);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="graph_8h.html#af763de8e7ef3d11d2a82265f4e08bdcd">freeGraph</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="graph_8h.html#a551f6a18d186684ea14378d0c1286a9d">printGraph</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="graph_8h.html#a8e12256c1a632eb2858ebc55c068ecd9">addVertice</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>, <span class="keywordtype">int</span> u, <span class="keywordtype">int</span> v);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">int</span>* <a class="code hl_function" href="graph_8h.html#ae3f99de2892387329cca8109ec957bbf">getNeighbours</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>, <span class="keywordtype">int</span> u);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="agraph_8h_html_a551f6a18d186684ea14378d0c1286a9d"><div class="ttname"><a href="graph_8h.html#a551f6a18d186684ea14378d0c1286a9d">printGraph</a></div><div class="ttdeci">void printGraph(graph *graph)</div><div class="ttdef"><b>Definition</b> graph.c:27</div></div>
-<div class="ttc" id="agraph_8h_html_a6cf57aa120220ea918d655c079d0092c"><div class="ttname"><a href="graph_8h.html#a6cf57aa120220ea918d655c079d0092c">createGraph</a></div><div class="ttdeci">graph * createGraph(int size)</div><div class="ttdef"><b>Definition</b> graph.c:5</div></div>
-<div class="ttc" id="agraph_8h_html_a8e12256c1a632eb2858ebc55c068ecd9"><div class="ttname"><a href="graph_8h.html#a8e12256c1a632eb2858ebc55c068ecd9">addVertice</a></div><div class="ttdeci">void addVertice(graph *graph, int u, int v)</div><div class="ttdef"><b>Definition</b> graph.c:45</div></div>
-<div class="ttc" id="agraph_8h_html_ae3f99de2892387329cca8109ec957bbf"><div class="ttname"><a href="graph_8h.html#ae3f99de2892387329cca8109ec957bbf">getNeighbours</a></div><div class="ttdeci">int * getNeighbours(graph *graph, int u)</div><div class="ttdef"><b>Definition</b> graph.c:56</div></div>
-<div class="ttc" id="agraph_8h_html_af763de8e7ef3d11d2a82265f4e08bdcd"><div class="ttname"><a href="graph_8h.html#af763de8e7ef3d11d2a82265f4e08bdcd">freeGraph</a></div><div class="ttdeci">void freeGraph(graph *graph)</div><div class="ttdef"><b>Definition</b> graph.c:19</div></div>
-<div class="ttc" id="astructgraph_html"><div class="ttname"><a href="structgraph.html">graph</a></div><div class="ttdef"><b>Definition</b> graph.h:9</div></div>
-<div class="ttc" id="astructgraph_html_a0f4a400141371e971f124319d76b0f6c"><div class="ttname"><a href="structgraph.html#a0f4a400141371e971f124319d76b0f6c">graph::graph</a></div><div class="ttdeci">int ** graph</div><div class="ttdef"><b>Definition</b> graph.h:11</div></div>
-<div class="ttc" id="astructgraph_html_a1886eee83ecdda7ec0304c751f8177d9"><div class="ttname"><a href="structgraph.html#a1886eee83ecdda7ec0304c751f8177d9">graph::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition</b> graph.h:10</div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_function" href="graph_8h.html#a6cf57aa120220ea918d655c079d0092c">createGraph</a>(<span class="keywordtype">int</span> size);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="graph_8h.html#af763de8e7ef3d11d2a82265f4e08bdcd">freeGraph</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="graph_8h.html#a551f6a18d186684ea14378d0c1286a9d">printGraph</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span> <a class="code hl_function" href="graph_8h.html#a8e12256c1a632eb2858ebc55c068ecd9">addVertice</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>, <span class="keywordtype">int</span> u, <span class="keywordtype">int</span> v);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">int</span>* <a class="code hl_function" href="graph_8h.html#ae3f99de2892387329cca8109ec957bbf">getNeighbours</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>, <span class="keywordtype">int</span> u);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">int</span>* <a class="code hl_function" href="graph_8h.html#a09704c5d2969d65248d5ee66db42f2a4">graphStats</a>(<a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agraph_8h_html_a09704c5d2969d65248d5ee66db42f2a4"><div class="ttname"><a href="graph_8h.html#a09704c5d2969d65248d5ee66db42f2a4">graphStats</a></div><div class="ttdeci">int * graphStats(graph *graph)</div><div class="ttdoc">Donne des statistiques sur le graph.</div><div class="ttdef"><b>Definition</b> graph.c:62</div></div>
+<div class="ttc" id="agraph_8h_html_a551f6a18d186684ea14378d0c1286a9d"><div class="ttname"><a href="graph_8h.html#a551f6a18d186684ea14378d0c1286a9d">printGraph</a></div><div class="ttdeci">void printGraph(graph *graph)</div><div class="ttdoc">Affiche dans la console un graphe sous cette forme :  s1 :      v1     v2     v3  s2 :     v1     v2 ...</div><div class="ttdef"><b>Definition</b> graph.c:29</div></div>
+<div class="ttc" id="agraph_8h_html_a6cf57aa120220ea918d655c079d0092c"><div class="ttname"><a href="graph_8h.html#a6cf57aa120220ea918d655c079d0092c">createGraph</a></div><div class="ttdeci">graph * createGraph(int size)</div><div class="ttdoc">Crée un graphe.</div><div class="ttdef"><b>Definition</b> graph.c:7</div></div>
+<div class="ttc" id="agraph_8h_html_a8e12256c1a632eb2858ebc55c068ecd9"><div class="ttname"><a href="graph_8h.html#a8e12256c1a632eb2858ebc55c068ecd9">addVertice</a></div><div class="ttdeci">void addVertice(graph *graph, int u, int v)</div><div class="ttdoc">Ajoute une arête dans le graphe.</div><div class="ttdef"><b>Definition</b> graph.c:47</div></div>
+<div class="ttc" id="agraph_8h_html_ae3f99de2892387329cca8109ec957bbf"><div class="ttname"><a href="graph_8h.html#ae3f99de2892387329cca8109ec957bbf">getNeighbours</a></div><div class="ttdeci">int * getNeighbours(graph *graph, int u)</div><div class="ttdoc">Récupère les voisins d'un sommet.</div><div class="ttdef"><b>Definition</b> graph.c:58</div></div>
+<div class="ttc" id="agraph_8h_html_af763de8e7ef3d11d2a82265f4e08bdcd"><div class="ttname"><a href="graph_8h.html#af763de8e7ef3d11d2a82265f4e08bdcd">freeGraph</a></div><div class="ttdeci">void freeGraph(graph *graph)</div><div class="ttdoc">Libère un graphe.</div><div class="ttdef"><b>Definition</b> graph.c:21</div></div>
+<div class="ttc" id="astructgraph_html"><div class="ttname"><a href="structgraph.html">graph</a></div><div class="ttdoc">Cette structure représente un graphe sous la forme d'une liste d'adjacence.</div><div class="ttdef"><b>Definition</b> graph.h:18</div></div>
+<div class="ttc" id="astructgraph_html_a1886eee83ecdda7ec0304c751f8177d9"><div class="ttname"><a href="structgraph.html#a1886eee83ecdda7ec0304c751f8177d9">graph::size</a></div><div class="ttdeci">int size</div><div class="ttdoc">Le nombre de sommets du graphe.</div><div class="ttdef"><b>Definition</b> graph.h:19</div></div>
+<div class="ttc" id="astructgraph_html_ac069107cc53ea679a7732b6097f28546"><div class="ttname"><a href="structgraph.html#ac069107cc53ea679a7732b6097f28546">graph::graph</a></div><div class="ttdeci">int ** graph</div><div class="ttdoc">Un tableau de taille size, où chaque case contient un tableau de taille 4, représentant les 4 voisins...</div><div class="ttdef"><b>Definition</b> graph.h:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

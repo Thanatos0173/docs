@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/algos.h File Reference</title>
+<title>Image Segmentation: types/algos.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -103,16 +102,23 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcc.html">cc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette structure représente les composantes connexe d'un graphe.  <a href="structcc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a253d143824d291765cf940d990c8ee52" id="r_a253d143824d291765cf940d990c8ee52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a253d143824d291765cf940d990c8ee52">kosaraju</a> (<a class="el" href="structgraph.html">graph</a> *g, int doVerbose)</td></tr>
+<tr class="memdesc:a253d143824d291765cf940d990c8ee52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique l'algorithme de Kosaraju sur un graphe.  <br /></td></tr>
 <tr class="separator:a253d143824d291765cf940d990c8ee52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb900b31a7d03a66ef5f172c9db49ce" id="r_afcb900b31a7d03a66ef5f172c9db49ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcb900b31a7d03a66ef5f172c9db49ce">freeCC</a> (<a class="el" href="structcc.html">cc</a> *c)</td></tr>
+<tr class="memdesc:afcb900b31a7d03a66ef5f172c9db49ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère la zone mémoire occupée par la structure de composante connexe.  <br /></td></tr>
 <tr class="separator:afcb900b31a7d03a66ef5f172c9db49ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadc2bc88f337b7016aa27dc0667f5595" id="r_aadc2bc88f337b7016aa27dc0667f5595"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadc2bc88f337b7016aa27dc0667f5595">calculateMean</a> (const <a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, <a class="el" href="structcc.html">cc</a> *ComposanteConnexe)</td></tr>
+<tr class="memdesc:aadc2bc88f337b7016aa27dc0667f5595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la moyenne de couleur de chaque composante connexe.  <br /></td></tr>
 <tr class="separator:aadc2bc88f337b7016aa27dc0667f5595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf47a325f4a1c81db13cebc924ea2f2c" id="r_abf47a325f4a1c81db13cebc924ea2f2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf47a325f4a1c81db13cebc924ea2f2c">getEdgeNotSeen</a> (int *seen, int size)</td></tr>
+<tr class="memdesc:abf47a325f4a1c81db13cebc924ea2f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le premier sommet non vu.  <br /></td></tr>
+<tr class="separator:abf47a325f4a1c81db13cebc924ea2f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aadc2bc88f337b7016aa27dc0667f5595" name="aadc2bc88f337b7016aa27dc0667f5595"></a>
@@ -134,6 +140,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Calcule la moyenne de couleur de chaque composante connexe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Un pointeur vers une image </td></tr>
+    <tr><td class="paramname">ComposanteConnexe</td><td>Un pointeur vers les composante connexes d'un graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int*</td><td>Un tableau de taille <code>4 * ComposanteConnexe-&gt;number</code> représentant la moyenne de couleur de chaque composantes connexe : les 3 premières cases représente la somme des valeurs RGB, et la quatrième le nombre de pixels sommés pour obtenir ces valeurs : la moyenne pour chaque couleur est obtenue en divisant la case souaitée par la quatrième case </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afcb900b31a7d03a66ef5f172c9db49ce" name="afcb900b31a7d03a66ef5f172c9db49ce"></a>
@@ -150,6 +171,50 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Libère la zone mémoire occupée par la structure de composante connexe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Un pointeur vers les composantes connexe d'un graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf47a325f4a1c81db13cebc924ea2f2c" name="abf47a325f4a1c81db13cebc924ea2f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf47a325f4a1c81db13cebc924ea2f2c">&#9670;&#160;</a></span>getEdgeNotSeen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getEdgeNotSeen </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>seen</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renvoie le premier sommet non vu. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seen</td><td>Le tableau tel que si une valeur est -1, alors le sommet correspondant n'a pas été vu, sinon il a été vu. </td></tr>
+    <tr><td class="paramname">size</td><td>la taille de seen </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>-1 si aucun sommet n'a été trouvé, le sommet sinon. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -171,6 +236,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Applique l'algorithme de Kosaraju sur un graphe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>Un pointeur vers le graphe </td></tr>
+    <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut <code>1</code> ou <code>0</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">cc*</td><td>Un pointeur vers la structure de composantes connexe du graphe </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

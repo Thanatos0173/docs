@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: command_list</title>
+<title>Image Segmentation: command_list</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
   </td>
  </tr>
@@ -89,19 +89,27 @@ $(function(){ initResizable(false); });
 <div class="contents">
 <div class="textblock"><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Commande   </th><th class="markdownTableHeadNone">Alias   </th><th class="markdownTableHeadNone">Action   </th><th class="markdownTableHeadNone">Argument    </th></tr>
+<th class="markdownTableHeadNone">Commande   </th><th class="markdownTableHeadNone">Action   </th><th class="markdownTableHeadNone">Argument   </th><th class="markdownTableHeadNone"></th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>-help</code>   </td><td class="markdownTableBodyNone"><code>--h</code>   </td><td class="markdownTableBodyNone">Affiche le menu d'aide   </td><td class="markdownTableBodyNone">Aucun    </td></tr>
+<td class="markdownTableBodyNone"><code>-h</code>   </td><td class="markdownTableBodyNone">Affiche le menu d'aide   </td><td class="markdownTableBodyNone">Aucun   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>-verbose</code>   </td><td class="markdownTableBodyNone"><code>--v</code>   </td><td class="markdownTableBodyNone">Affiche un grand nombre d'informations lors de l'exécution   </td><td class="markdownTableBodyNone">Aucun    </td></tr>
+<td class="markdownTableBodyNone"><code>-v</code>   </td><td class="markdownTableBodyNone">Affiche un grand nombre d'informations lors de l'exécution   </td><td class="markdownTableBodyNone">Aucun   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>-output</code>   </td><td class="markdownTableBodyNone"><code>--o</code>   </td><td class="markdownTableBodyNone">Quelle nom devrait avoir le fichier de sortie   </td><td class="markdownTableBodyNone">(1) Un nom de fichier    </td></tr>
+<td class="markdownTableBodyNone"><code>-o</code>   </td><td class="markdownTableBodyNone">Quelle nom devrait avoir le fichier de sortie   </td><td class="markdownTableBodyNone">(1) Un nom de fichier (defaut : a)   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>-limit</code>   </td><td class="markdownTableBodyNone"><code>--l</code>   </td><td class="markdownTableBodyNone">Interdit les fichiers ayant une taille supèrieure à la taille donnée (en MB)   </td><td class="markdownTableBodyNone">(1) Un taille de fichier    </td></tr>
+<td class="markdownTableBodyNone"><code>-l</code>   </td><td class="markdownTableBodyNone">Interdit les fichiers ayant une taille supèrieure à la taille donnée   </td><td class="markdownTableBodyNone">(1) Un taille de fichier   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>-gstats</code>   </td><td class="markdownTableBodyNone"><code>--gs</code>   </td><td class="markdownTableBodyNone">Affiche après l'exécution des informations sur le graphe. Est automatiquement appelée si le flag <code>-verbose</code> est entré   </td><td class="markdownTableBodyNone">Aucun    </td></tr>
+<td class="markdownTableBodyNone"><code>-g</code>   </td><td class="markdownTableBodyNone">Affiche après l'exécution des informations sur le graphe. Est automatiquement appelée si le flag <code>-v</code> est entré   </td><td class="markdownTableBodyNone">Aucun   </td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>-istats</code>   </td><td class="markdownTableBodyNone"><code>--is</code>   </td><td class="markdownTableBodyNone">Affiche après l'exécution des informations sur l'image segmentée. Est automatiquement appelée si le flag <code>-verbose</code> est entré   </td><td class="markdownTableBodyNone">Aucun    </td></tr>
+<td class="markdownTableBodyNone"><code>-s</code>   </td><td class="markdownTableBodyNone">Affiche après l'exécution des informations sur l'image segmentée. Est automatiquement appelée si le flag <code>-v</code> est entré   </td><td class="markdownTableBodyNone">Aucun   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>-i</code>   </td><td class="markdownTableBodyNone">Nom du fichier d'entrée   </td><td class="markdownTableBodyNone">(1) Nom de fichier   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>-e</code>   </td><td class="markdownTableBodyNone">Valeur d'espilon.   </td><td class="markdownTableBodyNone">(1) Epsilon (defaut : 30)   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>-c</code>   </td><td class="markdownTableBodyNone">Segmentation à utiliser   </td><td class="markdownTableBodyNone">(1) : [0 - Segmentation en regardant les sommets 2 à 2] [1 - Vérification avec les composantes connexes] (défaut : 1)   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['list_0',['list',['../da/d23/list_8h.html#a2e5d821e028341ac51ec5da9f18b588e',1,'list.h']]],
-  ['list_2ec_1',['list.c',['../d7/d40/list_8c.html',1,'']]],
-  ['list_2eh_2',['list.h',['../da/d23/list_8h.html',1,'']]],
-  ['list_5faux_3',['list_aux',['../d4/d2b/structlist__aux.html',1,'']]],
-  ['loadimage_4',['loadImage',['../d3/d10/image_8c.html#a3633a342fbe9b6236f02328017b72875',1,'loadImage(char *path):&#160;image.c'],['../d5/db2/image_8h.html#a3633a342fbe9b6236f02328017b72875',1,'loadImage(char *path):&#160;image.c']]]
+  ['image_0',['image',['../structimage.html',1,'']]],
+  ['image_2ec_1',['image.c',['../image_8c.html',1,'']]],
+  ['image_2eh_2',['image.h',['../image_8h.html',1,'']]],
+  ['imagetocc_3',['imageToCC',['../transform_8c.html#a862c7ed0a89bb7936ade184ea66a130c',1,'imageToCC(image *image, float epsilon, int doVerbose, graph *graph):&#160;transform.c'],['../transform_8h.html#a862c7ed0a89bb7936ade184ea66a130c',1,'imageToCC(image *image, float epsilon, int doVerbose, graph *graph):&#160;transform.c']]],
+  ['isvalidneighbour_4',['isValidNeighbour',['../transform_8c.html#adeea851f5e7b0e298d01a8a4a1d5582b',1,'transform.c']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['test_2ec_0',['test.c',['../d8/db9/test_8c.html',1,'']]],
-  ['transform_2ec_1',['transform.c',['../d8/d27/transform_8c.html',1,'']]],
-  ['transform_2eh_2',['transform.h',['../d2/d80/transform_8h.html',1,'']]]
+  ['read_0',['read',['../structstbi__io__callbacks.html#a623e46b3a2a019611601409926283a88',1,'stbi_io_callbacks']]],
+  ['readme_2emd_1',['README.md',['../README_8md.html',1,'']]],
+  ['rgbtolab_2',['rgbToLAB',['../conversion_8c.html#af15957b36f0e597965699dc2f80538cb',1,'rgbToLAB(int R, int G, int B):&#160;conversion.c'],['../conversion_8h.html#af15957b36f0e597965699dc2f80538cb',1,'rgbToLAB(int R, int G, int B):&#160;conversion.c']]]
 ];

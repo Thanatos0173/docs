@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/trash_types/list_string.h Source File</title>
+<title>Image Segmentation: types/trash_types/list_string.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -92,40 +91,33 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">list_string.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="list__string_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LIST_STRING_H</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LIST_STRING_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LIST_STRING_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="structlist__auxS.html">    4</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structlist__auxS.html">list_auxS</a></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structlist__auxS.html#a08fbae5d931114f4c6628777b20b64ab">    6</a></span>  <span class="keywordtype">char</span>* <a class="code hl_variable" href="structlist__auxS.html#a08fbae5d931114f4c6628777b20b64ab">value</a>;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structlist__auxS.html#a654a623eba5b6374b2624119b3ac4267">    7</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structlist__auxS.html#a654a623eba5b6374b2624119b3ac4267">isAllocated</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structlist__auxS.html#a9abb19d082ef5c0d3ebfd92e6b363a12">    8</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structlist__auxS.html">list_auxS</a>* <a class="code hl_variable" href="structlist__auxS.html#a9abb19d082ef5c0d3ebfd92e6b363a12">next</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  <span class="keywordtype">char</span>* value;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="keywordtype">int</span> isAllocated;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structlist__auxS.html">list_auxS</a>* next;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
 </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="list__string_8h.html#a38c429669bf8470a6bc44150e449e0cc">   11</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structlist__auxS.html">list_auxS</a> <a class="code hl_struct" href="structlist__auxS.html">list_s</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structlist__auxS.html">list_auxS</a> <a class="code hl_struct" href="structlist__auxS.html">list_s</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* Create a list of one element with value &quot;value&quot; */</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><a class="code hl_struct" href="structlist__auxS.html">list_s</a>* <a class="code hl_function" href="list__string_8h.html#a45dbb8a3baa55498d132ee8a30cfc780">createListS</a>(<span class="keywordtype">char</span>* <a class="code hl_variable" href="structlist__auxS.html#a08fbae5d931114f4c6628777b20b64ab">value</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="structlist__auxS.html#a654a623eba5b6374b2624119b3ac4267">isAllocated</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><a class="code hl_struct" href="structlist__auxS.html">list_s</a>* createListS(<span class="keywordtype">char</span>* value, <span class="keywordtype">int</span> isAllocated);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* Free a list */</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> <a class="code hl_function" href="list__string_8h.html#adf57193096d17dd76e7f888d986af5ef">freeListS</a>(<a class="code hl_struct" href="structlist__auxS.html">list_s</a>* l);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> freeListS(<a class="code hl_struct" href="structlist__auxS.html">list_s</a>* l);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/* Add the value &quot;value&quot; to a list. If keepDuplicate is False then a duplicate</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * valuw won&#39;t be added*/</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="list__string_8h.html#a233e08b23a28795cafb46d3c49d2ca80">addValueS</a>(<a class="code hl_struct" href="structlist__auxS.html">list_s</a>* l, <span class="keywordtype">char</span>* <a class="code hl_variable" href="structlist__auxS.html#a08fbae5d931114f4c6628777b20b64ab">value</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="structlist__auxS.html#a654a623eba5b6374b2624119b3ac4267">isAllocated</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> addValueS(<a class="code hl_struct" href="structlist__auxS.html">list_s</a>* l, <span class="keywordtype">char</span>* value, <span class="keywordtype">int</span> isAllocated);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/* Print a list to the console */</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="list__string_8h.html#a313aba8225fd692d1aef7d4241ddc551">printListS</a>(<a class="code hl_struct" href="structlist__auxS.html">list_s</a>* l);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> printListS(<a class="code hl_struct" href="structlist__auxS.html">list_s</a>* l);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/* Insert source into dest */</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="alist__string_8h_html_a233e08b23a28795cafb46d3c49d2ca80"><div class="ttname"><a href="list__string_8h.html#a233e08b23a28795cafb46d3c49d2ca80">addValueS</a></div><div class="ttdeci">void addValueS(list_s *l, char *value, int isAllocated)</div><div class="ttdef"><b>Definition</b> list_string.c:27</div></div>
-<div class="ttc" id="alist__string_8h_html_a313aba8225fd692d1aef7d4241ddc551"><div class="ttname"><a href="list__string_8h.html#a313aba8225fd692d1aef7d4241ddc551">printListS</a></div><div class="ttdeci">void printListS(list_s *l)</div><div class="ttdef"><b>Definition</b> list_string.c:36</div></div>
-<div class="ttc" id="alist__string_8h_html_a45dbb8a3baa55498d132ee8a30cfc780"><div class="ttname"><a href="list__string_8h.html#a45dbb8a3baa55498d132ee8a30cfc780">createListS</a></div><div class="ttdeci">list_s * createListS(char *value, int isAllocated)</div><div class="ttdef"><b>Definition</b> list_string.c:4</div></div>
-<div class="ttc" id="alist__string_8h_html_adf57193096d17dd76e7f888d986af5ef"><div class="ttname"><a href="list__string_8h.html#adf57193096d17dd76e7f888d986af5ef">freeListS</a></div><div class="ttdeci">void freeListS(list_s *l)</div><div class="ttdef"><b>Definition</b> list_string.c:13</div></div>
 <div class="ttc" id="astructlist__auxS_html"><div class="ttname"><a href="structlist__auxS.html">list_auxS</a></div><div class="ttdef"><b>Definition</b> list_string.h:5</div></div>
-<div class="ttc" id="astructlist__auxS_html_a08fbae5d931114f4c6628777b20b64ab"><div class="ttname"><a href="structlist__auxS.html#a08fbae5d931114f4c6628777b20b64ab">list_auxS::value</a></div><div class="ttdeci">char * value</div><div class="ttdef"><b>Definition</b> list_string.h:6</div></div>
-<div class="ttc" id="astructlist__auxS_html_a654a623eba5b6374b2624119b3ac4267"><div class="ttname"><a href="structlist__auxS.html#a654a623eba5b6374b2624119b3ac4267">list_auxS::isAllocated</a></div><div class="ttdeci">int isAllocated</div><div class="ttdef"><b>Definition</b> list_string.h:7</div></div>
-<div class="ttc" id="astructlist__auxS_html_a9abb19d082ef5c0d3ebfd92e6b363a12"><div class="ttname"><a href="structlist__auxS.html#a9abb19d082ef5c0d3ebfd92e6b363a12">list_auxS::next</a></div><div class="ttdeci">struct list_auxS * next</div><div class="ttdef"><b>Definition</b> list_string.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

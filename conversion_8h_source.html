@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/conversion.h Source File</title>
+<title>Image Segmentation: types/conversion.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -94,13 +93,12 @@ $(function(){ initResizable(false); });
 <div class="contents">
 <a href="conversion_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONVERSION_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONVERSION_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keywordtype">float</span>* <a class="code hl_function" href="conversion_8h.html#af15957b36f0e597965699dc2f80538cb">rgbToLAB</a>(<span class="keywordtype">int</span> R, <span class="keywordtype">int</span> G, <span class="keywordtype">int</span> B);</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keywordtype">float</span> <a class="code hl_function" href="conversion_8h.html#a360dc2d600ad4b61f7af972b7bb1bc98">delta</a>(<span class="keywordtype">int</span> r1, <span class="keywordtype">int</span> g1, <span class="keywordtype">int</span> b1, <span class="keywordtype">int</span> r2, <span class="keywordtype">int</span> g2, <span class="keywordtype">int</span> b2);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aconversion_8h_html_a360dc2d600ad4b61f7af972b7bb1bc98"><div class="ttname"><a href="conversion_8h.html#a360dc2d600ad4b61f7af972b7bb1bc98">delta</a></div><div class="ttdeci">float delta(int r1, int g1, int b1, int r2, int g2, int b2)</div><div class="ttdef"><b>Definition</b> conversion.c:49</div></div>
-<div class="ttc" id="aconversion_8h_html_af15957b36f0e597965699dc2f80538cb"><div class="ttname"><a href="conversion_8h.html#af15957b36f0e597965699dc2f80538cb">rgbToLAB</a></div><div class="ttdeci">float * rgbToLAB(int R, int G, int B)</div><div class="ttdef"><b>Definition</b> conversion.c:18</div></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">float</span>* <a class="code hl_function" href="conversion_8h.html#af15957b36f0e597965699dc2f80538cb">rgbToLAB</a>(<span class="keywordtype">int</span> R, <span class="keywordtype">int</span> G, <span class="keywordtype">int</span> B);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">float</span> <a class="code hl_function" href="conversion_8h.html#a360dc2d600ad4b61f7af972b7bb1bc98">delta</a>(<span class="keywordtype">int</span> r1, <span class="keywordtype">int</span> g1, <span class="keywordtype">int</span> b1, <span class="keywordtype">int</span> r2, <span class="keywordtype">int</span> g2, <span class="keywordtype">int</span> b2);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aconversion_8h_html_a360dc2d600ad4b61f7af972b7bb1bc98"><div class="ttname"><a href="conversion_8h.html#a360dc2d600ad4b61f7af972b7bb1bc98">delta</a></div><div class="ttdeci">float delta(int r1, int g1, int b1, int r2, int g2, int b2)</div><div class="ttdoc">Calcule la différence de couleur de 2 pixelx.</div><div class="ttdef"><b>Definition</b> conversion.c:49</div></div>
+<div class="ttc" id="aconversion_8h_html_af15957b36f0e597965699dc2f80538cb"><div class="ttname"><a href="conversion_8h.html#af15957b36f0e597965699dc2f80538cb">rgbToLAB</a></div><div class="ttdeci">float * rgbToLAB(int R, int G, int B)</div><div class="ttdoc">Transforme un triplet RGB en L*a*b*.</div><div class="ttdef"><b>Definition</b> conversion.c:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

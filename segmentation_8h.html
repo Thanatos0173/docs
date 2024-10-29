@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/segmentation.h File Reference</title>
+<title>Image Segmentation: types/segmentation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -102,30 +101,21 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0dfe55ed6c016428b3ac59950a6195cd" id="r_a0dfe55ed6c016428b3ac59950a6195cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage.html">image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dfe55ed6c016428b3ac59950a6195cd">graphToImage</a> (<a class="el" href="structcc.html">cc</a> *l, int height, int width, const <a class="el" href="structimage.html">image</a> *im, int doVerbose)</td></tr>
-<tr class="separator:a0dfe55ed6c016428b3ac59950a6195cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372aaad7a874642d95c621544dd4d988" id="r_a372aaad7a874642d95c621544dd4d988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage.html">image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a372aaad7a874642d95c621544dd4d988">ccToImage</a> (<a class="el" href="structcc.html">cc</a> *c, const <a class="el" href="structimage.html">image</a> *im, int doVerbose)</td></tr>
+<tr class="memdesc:a372aaad7a874642d95c621544dd4d988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une image à partir des composantes connexe d'un graphe.  <br /></td></tr>
+<tr class="separator:a372aaad7a874642d95c621544dd4d988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0dfe55ed6c016428b3ac59950a6195cd" name="a0dfe55ed6c016428b3ac59950a6195cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dfe55ed6c016428b3ac59950a6195cd">&#9670;&#160;</a></span>graphToImage()</h2>
+<a id="a372aaad7a874642d95c621544dd4d988" name="a372aaad7a874642d95c621544dd4d988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372aaad7a874642d95c621544dd4d988">&#9670;&#160;</a></span>ccToImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structimage.html">image</a> * graphToImage </td>
+          <td class="memname"><a class="el" href="structimage.html">image</a> * ccToImage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structcc.html">cc</a> *</td>          <td class="paramname"><span class="paramname"><em>l</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structcc.html">cc</a> *</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -139,6 +129,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Crée une image à partir des composantes connexe d'un graphe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Les composantes connexes du graphe </td></tr>
+    <tr><td class="paramname">im</td><td>L'image que l'on souhaite segmenter. </td></tr>
+    <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut 1 ou 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">image*</td><td>Un pointeur vers l'image segmentée </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

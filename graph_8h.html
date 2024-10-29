@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/graph.h File Reference</title>
+<title>Image Segmentation: types/graph.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -101,20 +100,37 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgraph.html">graph</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette structure représente un graphe sous la forme d'une liste d'adjacence.  <a href="structgraph.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6cf57aa120220ea918d655c079d0092c" id="r_a6cf57aa120220ea918d655c079d0092c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgraph.html">graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cf57aa120220ea918d655c079d0092c">createGraph</a> (int size)</td></tr>
+<tr class="memdesc:a6cf57aa120220ea918d655c079d0092c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un graphe.  <br /></td></tr>
 <tr class="separator:a6cf57aa120220ea918d655c079d0092c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af763de8e7ef3d11d2a82265f4e08bdcd" id="r_af763de8e7ef3d11d2a82265f4e08bdcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af763de8e7ef3d11d2a82265f4e08bdcd">freeGraph</a> (<a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>)</td></tr>
+<tr class="memdesc:af763de8e7ef3d11d2a82265f4e08bdcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libère un graphe.  <br /></td></tr>
 <tr class="separator:af763de8e7ef3d11d2a82265f4e08bdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a551f6a18d186684ea14378d0c1286a9d" id="r_a551f6a18d186684ea14378d0c1286a9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551f6a18d186684ea14378d0c1286a9d">printGraph</a> (<a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>)</td></tr>
+<tr class="memdesc:a551f6a18d186684ea14378d0c1286a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche dans la console un graphe sous cette forme :<br  />
+ <code>s1 :</code><br  />
+ &emsp;&emsp;&emsp; <code>v1</code><br  />
+ &emsp;&emsp;&emsp;<code>v2</code><br  />
+ &emsp;&emsp;&emsp;<code>v3</code><br  />
+ <code>s2 :</code><br  />
+ &emsp;&emsp;&emsp;<code>v1</code><br  />
+ &emsp;&emsp;&emsp;<code>v2</code><br  />
+ <code>s</code> représentant un sommet, <code>v</code> ses voisins.  <br /></td></tr>
 <tr class="separator:a551f6a18d186684ea14378d0c1286a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e12256c1a632eb2858ebc55c068ecd9" id="r_a8e12256c1a632eb2858ebc55c068ecd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e12256c1a632eb2858ebc55c068ecd9">addVertice</a> (<a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int u, int v)</td></tr>
+<tr class="memdesc:a8e12256c1a632eb2858ebc55c068ecd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une arête dans le graphe.  <br /></td></tr>
 <tr class="separator:a8e12256c1a632eb2858ebc55c068ecd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f99de2892387329cca8109ec957bbf" id="r_ae3f99de2892387329cca8109ec957bbf"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3f99de2892387329cca8109ec957bbf">getNeighbours</a> (<a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int u)</td></tr>
+<tr class="memdesc:ae3f99de2892387329cca8109ec957bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les voisins d'un sommet.  <br /></td></tr>
 <tr class="separator:ae3f99de2892387329cca8109ec957bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09704c5d2969d65248d5ee66db42f2a4" id="r_a09704c5d2969d65248d5ee66db42f2a4"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09704c5d2969d65248d5ee66db42f2a4">graphStats</a> (<a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>)</td></tr>
+<tr class="memdesc:a09704c5d2969d65248d5ee66db42f2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne des statistiques sur le graph.  <br /></td></tr>
+<tr class="separator:a09704c5d2969d65248d5ee66db42f2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a8e12256c1a632eb2858ebc55c068ecd9" name="a8e12256c1a632eb2858ebc55c068ecd9"></a>
@@ -141,6 +157,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Ajoute une arête dans le graphe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>Un pointeur vers le graphe </td></tr>
+    <tr><td class="paramname">u</td><td>Un sommet adjacent à l'arête que l'on veut ajouter </td></tr>
+    <tr><td class="paramname">v</td><td>Un sommet adjacent à l'arête que l'on veut ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6cf57aa120220ea918d655c079d0092c" name="a6cf57aa120220ea918d655c079d0092c"></a>
@@ -157,7 +183,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>...test... </p>
+
+<p>Crée un graphe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Le nombre de sommet du graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">graph*</td><td>Un pointeur vers la structure du graphe </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -175,6 +214,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Libère un graphe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>Le pointeur vers un graph </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -197,6 +244,52 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Récupère les voisins d'un sommet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>Un pointeur vers le graphe </td></tr>
+    <tr><td class="paramname">u</td><td>Le sommet duquel l'on veut récupérer les voisins </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int*</td><td>Un tableau de taille 4 contenant les 4 voisins de <code>u</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09704c5d2969d65248d5ee66db42f2a4" name="a09704c5d2969d65248d5ee66db42f2a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09704c5d2969d65248d5ee66db42f2a4">&#9670;&#160;</a></span>graphStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int * graphStats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgraph.html">graph</a> *</td>          <td class="paramname"><span class="paramname"><em>graph</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Donne des statistiques sur le graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>Un pointeur vers le graph </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int*</td><td>Un tableau avec le degré minimal du graphe, le degré maximal du graph et le nombre d'arêtes du graphe </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a551f6a18d186684ea14378d0c1286a9d" name="a551f6a18d186684ea14378d0c1286a9d"></a>
@@ -213,6 +306,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Affiche dans la console un graphe sous cette forme :<br  />
+ <code>s1 :</code><br  />
+ &emsp;&emsp;&emsp; <code>v1</code><br  />
+ &emsp;&emsp;&emsp;<code>v2</code><br  />
+ &emsp;&emsp;&emsp;<code>v3</code><br  />
+ <code>s2 :</code><br  />
+ &emsp;&emsp;&emsp;<code>v1</code><br  />
+ &emsp;&emsp;&emsp;<code>v2</code><br  />
+ <code>s</code> représentant un sommet, <code>v</code> ses voisins. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graph</td><td>Un pointeur vers le graphe </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/transform.h Source File</title>
+<title>Image Segmentation: types/transform.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -99,15 +98,19 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="graph_8h.html">graph.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="image_8h.html">image.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_struct" href="structcc.html">cc</a>* <a class="code hl_function" href="transform_8h.html#a6a1a4263a4ccde0d11450117120ae1cb">fastImageToGraph</a>(<a class="code hl_struct" href="structimage.html">image</a>* <a class="code hl_struct" href="structimage.html">image</a>, <span class="keywordtype">float</span> epsilon, <span class="keywordtype">int</span> doVerbose);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_struct" href="structcc.html">cc</a>* <a class="code hl_function" href="transform_8h.html#a6044c7d1fa5f755c3ed87f101ee62070">preciseImageToCC</a>(<a class="code hl_struct" href="structimage.html">image</a>* <a class="code hl_struct" href="structimage.html">image</a>, <span class="keywordtype">float</span> epsilon, <span class="keywordtype">int</span> doVerbose, <a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><a class="code hl_struct" href="structcc.html">cc</a>* <a class="code hl_function" href="transform_8h.html#a862c7ed0a89bb7936ade184ea66a130c">imageToCC</a>(<a class="code hl_struct" href="structimage.html">image</a>* <a class="code hl_struct" href="structimage.html">image</a>, <span class="keywordtype">float</span> epsilon, <span class="keywordtype">int</span> doVerbose, <a class="code hl_struct" href="structgraph.html">graph</a>* <a class="code hl_struct" href="structgraph.html">graph</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgos_8h_html"><div class="ttname"><a href="algos_8h.html">algos.h</a></div></div>
 <div class="ttc" id="agraph_8h_html"><div class="ttname"><a href="graph_8h.html">graph.h</a></div></div>
 <div class="ttc" id="aimage_8h_html"><div class="ttname"><a href="image_8h.html">image.h</a></div></div>
-<div class="ttc" id="astructcc_html"><div class="ttname"><a href="structcc.html">cc</a></div><div class="ttdef"><b>Definition</b> algos.h:12</div></div>
-<div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdef"><b>Definition</b> image.h:5</div></div>
-<div class="ttc" id="atransform_8h_html_a6a1a4263a4ccde0d11450117120ae1cb"><div class="ttname"><a href="transform_8h.html#a6a1a4263a4ccde0d11450117120ae1cb">fastImageToGraph</a></div><div class="ttdeci">cc * fastImageToGraph(image *image, float epsilon, int doVerbose)</div><div class="ttdef"><b>Definition</b> transform.c:95</div></div>
+<div class="ttc" id="astructcc_html"><div class="ttname"><a href="structcc.html">cc</a></div><div class="ttdoc">Cette structure représente les composantes connexe d'un graphe.</div><div class="ttdef"><b>Definition</b> algos.h:16</div></div>
+<div class="ttc" id="astructgraph_html"><div class="ttname"><a href="structgraph.html">graph</a></div><div class="ttdoc">Cette structure représente un graphe sous la forme d'une liste d'adjacence.</div><div class="ttdef"><b>Definition</b> graph.h:18</div></div>
+<div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdoc">Cette structure représente une image.</div><div class="ttdef"><b>Definition</b> image.h:14</div></div>
+<div class="ttc" id="atransform_8h_html_a6044c7d1fa5f755c3ed87f101ee62070"><div class="ttname"><a href="transform_8h.html#a6044c7d1fa5f755c3ed87f101ee62070">preciseImageToCC</a></div><div class="ttdeci">cc * preciseImageToCC(image *image, float epsilon, int doVerbose, graph *graph)</div><div class="ttdoc">Ajoute les arêtes du graphe pour qu'il corresponde à l'image, tout en construisant les composantes co...</div><div class="ttdef"><b>Definition</b> transform.c:101</div></div>
+<div class="ttc" id="atransform_8h_html_a862c7ed0a89bb7936ade184ea66a130c"><div class="ttname"><a href="transform_8h.html#a862c7ed0a89bb7936ade184ea66a130c">imageToCC</a></div><div class="ttdeci">cc * imageToCC(image *image, float epsilon, int doVerbose, graph *graph)</div><div class="ttdef"><b>Definition</b> transform.c:151</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

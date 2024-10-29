@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Image Segmentation - Hugo PERIN - Elio OUEDRAOGO: types/segmentation.h Source File</title>
+<title>Image Segmentation: types/segmentation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Image Segmentation - Hugo PERIN - Elio OUEDRAOGO<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Image Segmentation<span id="projectnumber">&#160;1.0.3</span>
    </div>
-   <div id="projectbrief">Segmentation of images</div>
   </td>
  </tr>
  </tbody>
@@ -99,16 +98,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="graph_8h.html">graph.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="image_8h.html">image.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_struct" href="structimage.html">image</a>* <a class="code hl_function" href="segmentation_8h.html#a0dfe55ed6c016428b3ac59950a6195cd">graphToImage</a>(<a class="code hl_struct" href="structcc.html">cc</a>* l, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> width, <span class="keyword">const</span> <a class="code hl_struct" href="structimage.html">image</a>* im,</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                    <span class="keywordtype">int</span> doVerbose);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_struct" href="structimage.html">image</a>* <a class="code hl_function" href="segmentation_8h.html#a372aaad7a874642d95c621544dd4d988">ccToImage</a>(<a class="code hl_struct" href="structcc.html">cc</a>* c, <span class="keyword">const</span> <a class="code hl_struct" href="structimage.html">image</a>* im, <span class="keywordtype">int</span> doVerbose);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgos_8h_html"><div class="ttname"><a href="algos_8h.html">algos.h</a></div></div>
 <div class="ttc" id="agraph_8h_html"><div class="ttname"><a href="graph_8h.html">graph.h</a></div></div>
 <div class="ttc" id="aimage_8h_html"><div class="ttname"><a href="image_8h.html">image.h</a></div></div>
-<div class="ttc" id="asegmentation_8h_html_a0dfe55ed6c016428b3ac59950a6195cd"><div class="ttname"><a href="segmentation_8h.html#a0dfe55ed6c016428b3ac59950a6195cd">graphToImage</a></div><div class="ttdeci">image * graphToImage(cc *l, int height, int width, const image *im, int doVerbose)</div><div class="ttdef"><b>Definition</b> segmentation.c:8</div></div>
-<div class="ttc" id="astructcc_html"><div class="ttname"><a href="structcc.html">cc</a></div><div class="ttdef"><b>Definition</b> algos.h:12</div></div>
-<div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdef"><b>Definition</b> image.h:5</div></div>
+<div class="ttc" id="asegmentation_8h_html_a372aaad7a874642d95c621544dd4d988"><div class="ttname"><a href="segmentation_8h.html#a372aaad7a874642d95c621544dd4d988">ccToImage</a></div><div class="ttdeci">image * ccToImage(cc *c, const image *im, int doVerbose)</div><div class="ttdoc">Crée une image à partir des composantes connexe d'un graphe.</div><div class="ttdef"><b>Definition</b> segmentation.c:9</div></div>
+<div class="ttc" id="astructcc_html"><div class="ttname"><a href="structcc.html">cc</a></div><div class="ttdoc">Cette structure représente les composantes connexe d'un graphe.</div><div class="ttdef"><b>Definition</b> algos.h:16</div></div>
+<div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdoc">Cette structure représente une image.</div><div class="ttdef"><b>Definition</b> image.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
