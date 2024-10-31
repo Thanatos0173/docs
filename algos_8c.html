@@ -103,8 +103,8 @@ Functions</h2></td></tr>
 <tr class="memitem:abf47a325f4a1c81db13cebc924ea2f2c" id="r_abf47a325f4a1c81db13cebc924ea2f2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf47a325f4a1c81db13cebc924ea2f2c">getEdgeNotSeen</a> (int *seen, int size)</td></tr>
 <tr class="memdesc:abf47a325f4a1c81db13cebc924ea2f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le premier sommet non vu.  <br /></td></tr>
 <tr class="separator:abf47a325f4a1c81db13cebc924ea2f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8ed930c51d449866a6306c90f175af" id="r_a6c8ed930c51d449866a6306c90f175af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c8ed930c51d449866a6306c90f175af">kosarajuAux</a> (<a class="el" href="structgraph.html">graph</a> *g, int class, int start, int *array, int *numberSeen, char *loadingBar, int doVerbose)</td></tr>
-<tr class="separator:a6c8ed930c51d449866a6306c90f175af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dda0286f4372abfa733ae422bcff050" id="r_a4dda0286f4372abfa733ae422bcff050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dda0286f4372abfa733ae422bcff050">kosarajuAux</a> (<a class="el" href="structgraph.html">graph</a> *g, int class, int start, int *ccArray, int *numberSeen, char *loadingBar, int doVerbose)</td></tr>
+<tr class="separator:a4dda0286f4372abfa733ae422bcff050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253d143824d291765cf940d990c8ee52" id="r_a253d143824d291765cf940d990c8ee52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a253d143824d291765cf940d990c8ee52">kosaraju</a> (<a class="el" href="structgraph.html">graph</a> *g, int doVerbose)</td></tr>
 <tr class="memdesc:a253d143824d291765cf940d990c8ee52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique l'algorithme de Kosaraju sur un graphe.  <br /></td></tr>
 <tr class="separator:a253d143824d291765cf940d990c8ee52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,8 +249,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c8ed930c51d449866a6306c90f175af" name="a6c8ed930c51d449866a6306c90f175af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c8ed930c51d449866a6306c90f175af">&#9670;&#160;</a></span>kosarajuAux()</h2>
+<a id="a4dda0286f4372abfa733ae422bcff050" name="a4dda0286f4372abfa733ae422bcff050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dda0286f4372abfa733ae422bcff050">&#9670;&#160;</a></span>kosarajuAux()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>array</em></span>, </td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>ccArray</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
