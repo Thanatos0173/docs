@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['rgbtolab_0',['rgbToLAB',['../conversion_8c.html#af15957b36f0e597965699dc2f80538cb',1,'rgbToLAB(int R, int G, int B):&#160;conversion.c'],['../conversion_8h.html#af15957b36f0e597965699dc2f80538cb',1,'rgbToLAB(int R, int G, int B):&#160;conversion.c']]]
+  ['rgbconversion_0',['rgbConversion',['../conversion_8c.html#ac7d94ac2e454e6f0ccff7995a56e2965',1,'conversion.c']]],
+  ['rgbtoxyz_1',['RGBToXYZ',['../conversion_8c.html#a56820e7eb1246274429dafde871f6a87',1,'conversion.c']]]
 ];

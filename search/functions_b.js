@@ -1,7 +1,7 @@
 var searchData=
 [
   ['shiftedindex_0',['shiftedIndex',['../transform_8c.html#a8ba14f3b2a01a1a683afb8e3aea5cce5',1,'transform.c']]],
-  ['similarity_1',['similarity',['../image_8c.html#a00125766da7b1465a7f761d65c1da678',1,'similarity(const image *image1, const image *image2):&#160;image.c'],['../image_8h.html#a00125766da7b1465a7f761d65c1da678',1,'similarity(const image *image1, const image *image2):&#160;image.c']]],
+  ['similarity_1',['similarity',['../image_8c.html#a956f429f8eb78459290a01593a85326b',1,'similarity(const image *image1, const image *image2, int wishedTransformation):&#160;image.c'],['../image_8h.html#a956f429f8eb78459290a01593a85326b',1,'similarity(const image *image1, const image *image2, int wishedTransformation):&#160;image.c']]],
   ['stbi_5fconvert_5fiphone_5fpng_5fto_5frgb_2',['stbi_convert_iphone_png_to_rgb',['../stb__image_8h.html#a23525ef2b882f3de426b47ecf8d9151b',1,'stb_image.h']]],
   ['stbi_5fconvert_5fiphone_5fpng_5fto_5frgb_5fthread_3',['stbi_convert_iphone_png_to_rgb_thread',['../stb__image_8h.html#aff26696e30b62a40dd00bc12415343f6',1,'stb_image.h']]],
   ['stbi_5ffailure_5freason_4',['stbi_failure_reason',['../stb__image_8h.html#ac72f312f610a7df1519ea0f2a2f94be9',1,'stb_image.h']]],

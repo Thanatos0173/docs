@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['calculatemean_0',['calculateMean',['../algos_8c.html#aadc2bc88f337b7016aa27dc0667f5595',1,'calculateMean(const image *image, cc *ComposanteConnexe):&#160;algos.c'],['../algos_8h.html#aadc2bc88f337b7016aa27dc0667f5595',1,'calculateMean(const image *image, cc *ComposanteConnexe):&#160;algos.c']]],
+  ['calculatemean_0',['calculateMean',['../algos_8c.html#a3ad11889903807069c067adbf406663f',1,'calculateMean(const image *image, cc *connectedComponent):&#160;algos.c'],['../algos_8h.html#aadc2bc88f337b7016aa27dc0667f5595',1,'calculateMean(const image *image, cc *ComposanteConnexe):&#160;algos.c']]],
   ['cc_1',['cc',['../structcc.html',1,'']]],
   ['cctoimage_2',['ccToImage',['../segmentation_8c.html#a372aaad7a874642d95c621544dd4d988',1,'ccToImage(cc *c, const image *im, int doVerbose):&#160;segmentation.c'],['../segmentation_8h.html#a372aaad7a874642d95c621544dd4d988',1,'ccToImage(cc *c, const image *im, int doVerbose):&#160;segmentation.c']]],
   ['channels_3',['channels',['../structimage.html#a3fc26e4d9f610417f3a353bd6fbad6e8',1,'image']]],
   ['cli_2ec_4',['cli.c',['../cli_8c.html',1,'']]],
-  ['clin_5',['Clin',['../conversion_8c.html#a00fb3f36cf9ec4b288076b9730e75875',1,'conversion.c']]],
+  ['clin_5',['Clin',['../conversion_8c.html#a1db60628fbe9ac2c6a02f20211eff372',1,'conversion.c']]],
   ['command_5flist_6',['command_list',['../md_command__list.html',1,'']]],
   ['command_5flist_2emd_7',['command_list.md',['../command__list_8md.html',1,'']]],
   ['components_8',['components',['../structcc.html#ad0565cbec0b708c3ebe72ca3c37356f3',1,'cc']]],

@@ -98,22 +98,19 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af15957b36f0e597965699dc2f80538cb" id="r_af15957b36f0e597965699dc2f80538cb"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15957b36f0e597965699dc2f80538cb">rgbToLAB</a> (int R, int G, int B)</td></tr>
-<tr class="memdesc:af15957b36f0e597965699dc2f80538cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforme un triplet RGB en L*a*b*.  <br /></td></tr>
-<tr class="separator:af15957b36f0e597965699dc2f80538cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360dc2d600ad4b61f7af972b7bb1bc98" id="r_a360dc2d600ad4b61f7af972b7bb1bc98"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360dc2d600ad4b61f7af972b7bb1bc98">delta</a> (int r1, int g1, int b1, int r2, int g2, int b2)</td></tr>
-<tr class="memdesc:a360dc2d600ad4b61f7af972b7bb1bc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la différence de couleur de 2 pixelx.  <br /></td></tr>
-<tr class="separator:a360dc2d600ad4b61f7af972b7bb1bc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb22fc8e3b46cd83ea68455442a28cf" id="r_accb22fc8e3b46cd83ea68455442a28cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accb22fc8e3b46cd83ea68455442a28cf">delta</a> (int r1, int g1, int b1, int r2, int g2, int b2, int wishedTransformation)</td></tr>
+<tr class="memdesc:accb22fc8e3b46cd83ea68455442a28cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la différence de couleur de 2 pixelx.  <br /></td></tr>
+<tr class="separator:accb22fc8e3b46cd83ea68455442a28cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a360dc2d600ad4b61f7af972b7bb1bc98" name="a360dc2d600ad4b61f7af972b7bb1bc98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a360dc2d600ad4b61f7af972b7bb1bc98">&#9670;&#160;</a></span>delta()</h2>
+<a id="accb22fc8e3b46cd83ea68455442a28cf" name="accb22fc8e3b46cd83ea68455442a28cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb22fc8e3b46cd83ea68455442a28cf">&#9670;&#160;</a></span>delta()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float delta </td>
+          <td class="memname">double delta </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r1</em></span>, </td>
         </tr>
@@ -140,7 +137,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b2</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -154,54 +156,13 @@ Functions</h2></td></tr>
     <tr><td class="paramname">r2</td><td>Le rouge d'un pixel RGB </td></tr>
     <tr><td class="paramname">g2</td><td>Le vert d'un pixel RGB </td></tr>
     <tr><td class="paramname">b2</td><td>Le bleu d'un pixel RGB </td></tr>
+    <tr><td class="paramname">wishedTransformation</td><td>La transformation souhaitée, i.e dans quel color space les couleurs RGB devraient être transformées. 0 : CIELAB, 1 : CIELUV </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">float</td><td>La différence de couleur entre <code>(r1, g1, b1)</code> et <code>(r2, g2, b2)</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af15957b36f0e597965699dc2f80538cb" name="af15957b36f0e597965699dc2f80538cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af15957b36f0e597965699dc2f80538cb">&#9670;&#160;</a></span>rgbToLAB()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float * rgbToLAB </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>R</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>G</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Transforme un triplet RGB en L*a*b*. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">R</td><td>Le rouge d'un pixel RGB </td></tr>
-    <tr><td class="paramname">G</td><td>Le vert d'un pixel RGB </td></tr>
-    <tr><td class="paramname">B</td><td>Le bleu d'un pixel RGB </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">float*</td><td>Un tableau de taille 3, contenant le L*, a* et b* de la couleur passé en argument. </td></tr>
+    <tr><td class="paramname">double</td><td>La différence de couleur entre <code>(r1, g1, b1)</code> et <code>(r2, g2, b2)</code> </td></tr>
   </table>
   </dd>
 </dl>

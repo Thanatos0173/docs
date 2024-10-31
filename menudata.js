@@ -47,7 +47,12 @@ var menudata={children:[
 {text:"p",url:"globals.html#index_p"},
 {text:"r",url:"globals.html#index_r"},
 {text:"s",url:"globals.html#index_s"},
-{text:"w",url:"globals.html#index_w"}]},
+{text:"u",url:"globals.html#index_u"},
+{text:"v",url:"globals.html#index_v"},
+{text:"w",url:"globals.html#index_w"},
+{text:"x",url:"globals.html#index_x"},
+{text:"y",url:"globals.html#index_y"},
+{text:"z",url:"globals.html#index_z"}]},
 {text:"Functions",url:"globals_func.html",children:[
 {text:"a",url:"globals_func.html#index_a"},
 {text:"c",url:"globals_func.html#index_c"},

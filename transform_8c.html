@@ -110,17 +110,18 @@ Functions</h2></td></tr>
 <tr class="separator:adeea851f5e7b0e298d01a8a4a1d5582b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba14f3b2a01a1a683afb8e3aea5cce5" id="r_a8ba14f3b2a01a1a683afb8e3aea5cce5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ba14f3b2a01a1a683afb8e3aea5cce5">shiftedIndex</a> (int index, int channels)</td></tr>
 <tr class="separator:a8ba14f3b2a01a1a683afb8e3aea5cce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7d59d9ee21518fa77ca2ce327041df" id="r_aba7d59d9ee21518fa77ca2ce327041df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba7d59d9ee21518fa77ca2ce327041df">addingAux</a> (<a class="el" href="structgraph.html">graph</a> *g, int class, int start, int *ccArray, <a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, float epsilon, int *numberUsed, char *loadingBar, int doVerbose)</td></tr>
-<tr class="separator:aba7d59d9ee21518fa77ca2ce327041df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6044c7d1fa5f755c3ed87f101ee62070" id="r_a6044c7d1fa5f755c3ed87f101ee62070"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6044c7d1fa5f755c3ed87f101ee62070">preciseImageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, float epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>)</td></tr>
-<tr class="memdesc:a6044c7d1fa5f755c3ed87f101ee62070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image, tout en construisant les composantes connexes avec les arêtes déjà crées, pour pouvoir vérifier que lorsque l'on ajoute une arête, alors le sommet ajouté est assez proche de la composante connexe (en terme de couleur).  <br /></td></tr>
-<tr class="separator:a6044c7d1fa5f755c3ed87f101ee62070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a862c7ed0a89bb7936ade184ea66a130c" id="r_a862c7ed0a89bb7936ade184ea66a130c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a862c7ed0a89bb7936ade184ea66a130c">imageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, float epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>)</td></tr>
-<tr class="separator:a862c7ed0a89bb7936ade184ea66a130c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa30b7419dec5367dcca4eec3d21919" id="r_affa30b7419dec5367dcca4eec3d21919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affa30b7419dec5367dcca4eec3d21919">addingAux</a> (<a class="el" href="structgraph.html">graph</a> *g, int class, int start, int *ccArray, <a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, float epsilon, int *numberUsed, char *loadingBar, int doVerbose, int wishedTransformation)</td></tr>
+<tr class="separator:affa30b7419dec5367dcca4eec3d21919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8108ca5c372c16398f348036e962add5" id="r_a8108ca5c372c16398f348036e962add5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8108ca5c372c16398f348036e962add5">preciseImageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, float epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int wishedTransformation)</td></tr>
+<tr class="memdesc:a8108ca5c372c16398f348036e962add5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image, tout en construisant les composantes connexes avec les arêtes déjà crées, pour pouvoir vérifier que lorsque l'on ajoute une arête, alors le sommet ajouté est assez proche de la composante connexe (en terme de couleur).  <br /></td></tr>
+<tr class="separator:a8108ca5c372c16398f348036e962add5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0136e79bec962433bfde9bd514b99624" id="r_a0136e79bec962433bfde9bd514b99624"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0136e79bec962433bfde9bd514b99624">imageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, float epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int wishedTransformation)</td></tr>
+<tr class="memdesc:a0136e79bec962433bfde9bd514b99624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image.  <br /></td></tr>
+<tr class="separator:a0136e79bec962433bfde9bd514b99624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aba7d59d9ee21518fa77ca2ce327041df" name="aba7d59d9ee21518fa77ca2ce327041df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba7d59d9ee21518fa77ca2ce327041df">&#9670;&#160;</a></span>addingAux()</h2>
+<a id="affa30b7419dec5367dcca4eec3d21919" name="affa30b7419dec5367dcca4eec3d21919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa30b7419dec5367dcca4eec3d21919">&#9670;&#160;</a></span>addingAux()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,15 +169,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doVerbose</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doVerbose</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a862c7ed0a89bb7936ade184ea66a130c" name="a862c7ed0a89bb7936ade184ea66a130c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a862c7ed0a89bb7936ade184ea66a130c">&#9670;&#160;</a></span>imageToCC()</h2>
+<a id="a0136e79bec962433bfde9bd514b99624" name="a0136e79bec962433bfde9bd514b99624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0136e79bec962433bfde9bd514b99624">&#9670;&#160;</a></span>imageToCC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,10 +205,33 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structgraph.html">graph</a> *</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="structgraph.html">graph</a> *</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Ajoute les arêtes du graphe pour qu'il corresponde à l'image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>Pointeur vers l'image à segmenter </td></tr>
+    <tr><td class="paramname">epsilon</td><td>Valeur qui définit à quel point la segmentation est précise </td></tr>
+    <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut 1 ou 0 </td></tr>
+    <tr><td class="paramname">graph</td><td>Le graphe qui va être modifié. Il est passé en argument afin de pouvoir récupérer des statistiques si nécessaire. </td></tr>
+    <tr><td class="paramname">wishedTranformation</td><td>Dans quel color space les couleurs devraient être transformées. Voir <a class="el" href="conversion_8h.html">conversion.h</a> pour plus d'informations. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">cc*</td><td>Les composantes connexe du graphe représentant l'image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -237,8 +266,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6044c7d1fa5f755c3ed87f101ee62070" name="a6044c7d1fa5f755c3ed87f101ee62070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6044c7d1fa5f755c3ed87f101ee62070">&#9670;&#160;</a></span>preciseImageToCC()</h2>
+<a id="a8108ca5c372c16398f348036e962add5" name="a8108ca5c372c16398f348036e962add5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8108ca5c372c16398f348036e962add5">&#9670;&#160;</a></span>preciseImageToCC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +290,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structgraph.html">graph</a> *</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="structgraph.html">graph</a> *</td>          <td class="paramname"><span class="paramname"><em>graph</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -273,6 +307,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">epsilon</td><td>Valeur qui définit à quel point la segmentation est précise </td></tr>
     <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut 1 ou 0 </td></tr>
     <tr><td class="paramname">graph</td><td>Le graphe qui va être modifié. Il est passé en argument afin de pouvoir récupérer des statistiques si nécessaire. </td></tr>
+    <tr><td class="paramname">wishedTranformation</td><td>Dans quel color space les couleurs devraient être transformées. Voir <a class="el" href="conversion_8h.html">conversion.h</a> pour plus d'informations. </td></tr>
   </table>
   </dd>
 </dl>

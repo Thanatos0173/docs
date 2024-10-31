@@ -3,7 +3,7 @@ var searchData=
   ['segmentation_2ec_0',['segmentation.c',['../segmentation_8c.html',1,'']]],
   ['segmentation_2eh_1',['segmentation.h',['../segmentation_8h.html',1,'']]],
   ['shiftedindex_2',['shiftedIndex',['../transform_8c.html#a8ba14f3b2a01a1a683afb8e3aea5cce5',1,'transform.c']]],
-  ['similarity_3',['similarity',['../image_8c.html#a00125766da7b1465a7f761d65c1da678',1,'similarity(const image *image1, const image *image2):&#160;image.c'],['../image_8h.html#a00125766da7b1465a7f761d65c1da678',1,'similarity(const image *image1, const image *image2):&#160;image.c']]],
+  ['similarity_3',['similarity',['../image_8c.html#a956f429f8eb78459290a01593a85326b',1,'similarity(const image *image1, const image *image2, int wishedTransformation):&#160;image.c'],['../image_8h.html#a956f429f8eb78459290a01593a85326b',1,'similarity(const image *image1, const image *image2, int wishedTransformation):&#160;image.c']]],
   ['size_4',['size',['../structgraph.html#a1886eee83ecdda7ec0304c751f8177d9',1,'graph']]],
   ['skip_5',['skip',['../structstbi__io__callbacks.html#a257aac5480a90a6c4b8fbe86c1b01068',1,'stbi_io_callbacks']]],
   ['stb_5fimage_2eh_6',['stb_image.h',['../stb__image_8h.html',1,'']]],
