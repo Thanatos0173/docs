@@ -101,13 +101,13 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a372aaad7a874642d95c621544dd4d988" id="r_a372aaad7a874642d95c621544dd4d988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage.html">image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a372aaad7a874642d95c621544dd4d988">ccToImage</a> (<a class="el" href="structcc.html">cc</a> *c, const <a class="el" href="structimage.html">image</a> *im, int doVerbose)</td></tr>
-<tr class="memdesc:a372aaad7a874642d95c621544dd4d988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une image à partir des composantes connexe d'un graphe.  <br /></td></tr>
-<tr class="separator:a372aaad7a874642d95c621544dd4d988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055dd42bad5c4719c78fbc2d1a1652ca" id="r_a055dd42bad5c4719c78fbc2d1a1652ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structimage.html">image</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a055dd42bad5c4719c78fbc2d1a1652ca">ccToImage</a> (<a class="el" href="structcc.html">cc</a> *c, const <a class="el" href="structimage.html">image</a> *im, int doVerbose, int doPath, int emptyFilling)</td></tr>
+<tr class="memdesc:a055dd42bad5c4719c78fbc2d1a1652ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une image à partir des composantes connexe d'un graphe.  <br /></td></tr>
+<tr class="separator:a055dd42bad5c4719c78fbc2d1a1652ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a372aaad7a874642d95c621544dd4d988" name="a372aaad7a874642d95c621544dd4d988"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a372aaad7a874642d95c621544dd4d988">&#9670;&#160;</a></span>ccToImage()</h2>
+<a id="a055dd42bad5c4719c78fbc2d1a1652ca" name="a055dd42bad5c4719c78fbc2d1a1652ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a055dd42bad5c4719c78fbc2d1a1652ca">&#9670;&#160;</a></span>ccToImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,7 +125,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doVerbose</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doVerbose</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>emptyFilling</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -136,6 +146,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">c</td><td>Les composantes connexes du graphe </td></tr>
     <tr><td class="paramname">im</td><td>L'image que l'on souhaite segmenter. </td></tr>
     <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut 1 ou 0 </td></tr>
+    <tr><td class="paramname">doPath</td><td>Au lieu de colorier toute la composante connexe, seul les bords seront de la couleur. </td></tr>
+    <tr><td class="paramname">emptyFilling</td><td>si vrai et doPath == 1 alors l'intérieur des composante connexes sera vide, sinon ce sera les pixels de l'image originale. </td></tr>
   </table>
   </dd>
 </dl>
