@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['size_0',['size',['../structgraph.html#a1886eee83ecdda7ec0304c751f8177d9',1,'graph']]],
-  ['skip_1',['skip',['../structstbi__io__callbacks.html#a257aac5480a90a6c4b8fbe86c1b01068',1,'stbi_io_callbacks']]],
-  ['stbi_5fwrite_5fforce_5fpng_5ffilter_2',['stbi_write_force_png_filter',['../stb__image__write_8h.html#a5bfaf6779e88c4122d2b1fdf3723378e',1,'stb_image_write.h']]],
-  ['stbi_5fwrite_5fpng_5fcompression_5flevel_3',['stbi_write_png_compression_level',['../stb__image__write_8h.html#a599b900a32e68e29c820d9755d0eea28',1,'stb_image_write.h']]],
-  ['stbi_5fwrite_5ftga_5fwith_5frle_4',['stbi_write_tga_with_rle',['../stb__image__write_8h.html#af4ce66fb7d4d97110036bf6e92e196bd',1,'stb_image_write.h']]]
+  ['g_0',['g',['../transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1',1,'transform_threading.c']]],
+  ['globalstack_1',['globalStack',['../transform__threading_8c.html#a9ed8a0c8b83995cb41c13f263e4aa608',1,'transform_threading.c']]],
+  ['graph_2',['graph',['../structgraph.html#ac069107cc53ea679a7732b6097f28546',1,'graph']]]
 ];

@@ -99,29 +99,33 @@ $(function(){ initResizable(false); });
 <code>#include &quot;<a class="el" href="graph_8h_source.html">graph.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="image_8h_source.html">image.h</a>&quot;</code><br />
 <code>#include &lt;bits/time.h&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;semaphore.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:adeea851f5e7b0e298d01a8a4a1d5582b" id="r_adeea851f5e7b0e298d01a8a4a1d5582b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeea851f5e7b0e298d01a8a4a1d5582b">isValidNeighbour</a> (int edge, int neighbour, int width, int height)</td></tr>
+<tr class="memdesc:adeea851f5e7b0e298d01a8a4a1d5582b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le voisin donné peut être un voisin de <code>edge</code> dans l'image.  <br /></td></tr>
 <tr class="separator:adeea851f5e7b0e298d01a8a4a1d5582b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba14f3b2a01a1a683afb8e3aea5cce5" id="r_a8ba14f3b2a01a1a683afb8e3aea5cce5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ba14f3b2a01a1a683afb8e3aea5cce5">shiftedIndex</a> (int index, int channels)</td></tr>
 <tr class="separator:a8ba14f3b2a01a1a683afb8e3aea5cce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5547855956c183b16e8411519b6c51f1" id="r_a5547855956c183b16e8411519b6c51f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5547855956c183b16e8411519b6c51f1">addingAux</a> (<a class="el" href="structgraph.html">graph</a> *g, int class, int start, int *ccArray, <a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, double epsilon, int *numberUsed, char *loadingBar, int doVerbose, int wishedTransformation)</td></tr>
-<tr class="separator:a5547855956c183b16e8411519b6c51f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74368efbf2b13a5e78d23f2577d4830" id="r_af74368efbf2b13a5e78d23f2577d4830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af74368efbf2b13a5e78d23f2577d4830">preciseImageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, double epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int wishedTransformation)</td></tr>
-<tr class="memdesc:af74368efbf2b13a5e78d23f2577d4830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image, tout en construisant les composantes connexes avec les arêtes déjà crées, pour pouvoir vérifier que lorsque l'on ajoute une arête, alors le sommet ajouté est assez proche de la composante connexe (en terme de couleur).  <br /></td></tr>
-<tr class="separator:af74368efbf2b13a5e78d23f2577d4830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63cd811aacb4dbb2d9c3e444ab220aef" id="r_a63cd811aacb4dbb2d9c3e444ab220aef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63cd811aacb4dbb2d9c3e444ab220aef">imageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, double epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int wishedTransformation)</td></tr>
-<tr class="memdesc:a63cd811aacb4dbb2d9c3e444ab220aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image.  <br /></td></tr>
-<tr class="separator:a63cd811aacb4dbb2d9c3e444ab220aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31c4357aa9b28ff79a74f69753bd7a1" id="r_aa31c4357aa9b28ff79a74f69753bd7a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa31c4357aa9b28ff79a74f69753bd7a1">addingAux</a> (<a class="el" href="structgraph.html">graph</a> *<a class="el" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, int class, int start, int *<a class="el" href="transform__threading_8c.html#a771cbf75fd83a2673e67e8a9f77e98d5">ccArray</a>, <a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, double epsilon, int *<a class="el" href="transform__threading_8c.html#af384c986b186b018fd6a332fee7db58f">numberUsed</a>, char *loadingBar, int doVerbose, int <a class="el" href="transform__threading_8c.html#a2e976bf8b45df922701718cfb1b2a097">wishedTransformation</a>, int <a class="el" href="transform__threading_8c.html#a5e50d2d8bb5caf73bfa457eb6bfe6e6c">doRandom</a>)</td></tr>
+<tr class="separator:aa31c4357aa9b28ff79a74f69753bd7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac43d565d050b112e465ad0f9161335" id="r_a0ac43d565d050b112e465ad0f9161335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ac43d565d050b112e465ad0f9161335">preciseImageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, double epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int <a class="el" href="transform__threading_8c.html#a2e976bf8b45df922701718cfb1b2a097">wishedTransformation</a>, int <a class="el" href="transform__threading_8c.html#a5e50d2d8bb5caf73bfa457eb6bfe6e6c">doRandom</a>)</td></tr>
+<tr class="memdesc:a0ac43d565d050b112e465ad0f9161335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image, tout en construisant les composantes connexes avec les arêtes déjà crées, pour pouvoir vérifier que lorsque l'on ajoute une arête, alors le sommet ajouté est assez proche de la composante connexe (en terme de couleur).  <br /></td></tr>
+<tr class="separator:a0ac43d565d050b112e465ad0f9161335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5e28d5505443773804f7a0abeeb4da" id="r_a2a5e28d5505443773804f7a0abeeb4da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcc.html">cc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a5e28d5505443773804f7a0abeeb4da">imageToCC</a> (<a class="el" href="structimage.html">image</a> *<a class="el" href="structimage.html">image</a>, double epsilon, int doVerbose, <a class="el" href="structgraph.html">graph</a> *<a class="el" href="structgraph.html">graph</a>, int <a class="el" href="transform__threading_8c.html#a2e976bf8b45df922701718cfb1b2a097">wishedTransformation</a>, int <a class="el" href="transform__threading_8c.html#a5e50d2d8bb5caf73bfa457eb6bfe6e6c">doRandom</a>)</td></tr>
+<tr class="memdesc:a2a5e28d5505443773804f7a0abeeb4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les arêtes du graphe pour qu'il corresponde à l'image.  <br /></td></tr>
+<tr class="separator:a2a5e28d5505443773804f7a0abeeb4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5547855956c183b16e8411519b6c51f1" name="a5547855956c183b16e8411519b6c51f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5547855956c183b16e8411519b6c51f1">&#9670;&#160;</a></span>addingAux()</h2>
+<a id="aa31c4357aa9b28ff79a74f69753bd7a1" name="aa31c4357aa9b28ff79a74f69753bd7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31c4357aa9b28ff79a74f69753bd7a1">&#9670;&#160;</a></span>addingAux()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,15 +178,20 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doRandom</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a63cd811aacb4dbb2d9c3e444ab220aef" name="a63cd811aacb4dbb2d9c3e444ab220aef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63cd811aacb4dbb2d9c3e444ab220aef">&#9670;&#160;</a></span>imageToCC()</h2>
+<a id="a2a5e28d5505443773804f7a0abeeb4da" name="a2a5e28d5505443773804f7a0abeeb4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5e28d5505443773804f7a0abeeb4da">&#9670;&#160;</a></span>imageToCC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +219,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doRandom</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,6 +237,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut 1 ou 0 </td></tr>
     <tr><td class="paramname">graph</td><td>Le graphe qui va être modifié. Il est passé en argument afin de pouvoir récupérer des statistiques si nécessaire. </td></tr>
     <tr><td class="paramname">wishedTranformation</td><td>Dans quel color space les couleurs devraient être transformées. Voir <a class="el" href="conversion_8h.html">conversion.h</a> pour plus d'informations. </td></tr>
+    <tr><td class="paramname">doRandom</td><td>Si doRandom est mis à vrai, on ajoute les voisins dans un ordre aléatoire. Sinon, on les ajoute dans l'ordre suivant : <code>voisin de droite, voisin de gauche, voisin du bas, voisin du haut</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -264,10 +279,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Vérifie si le voisin donné peut être un voisin de <code>edge</code> dans l'image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">edge</td><td>Un sommet @paran neighbour Un voisin potentiel du sommet </td></tr>
+    <tr><td class="paramname">width</td><td>La largeur de l'image </td></tr>
+    <tr><td class="paramname">height</td><td>La longueur de l'image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>1 si le voisin est valide, 0 sinon. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="af74368efbf2b13a5e78d23f2577d4830" name="af74368efbf2b13a5e78d23f2577d4830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af74368efbf2b13a5e78d23f2577d4830">&#9670;&#160;</a></span>preciseImageToCC()</h2>
+<a id="a0ac43d565d050b112e465ad0f9161335" name="a0ac43d565d050b112e465ad0f9161335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac43d565d050b112e465ad0f9161335">&#9670;&#160;</a></span>preciseImageToCC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +326,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wishedTransformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>doRandom</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -308,6 +344,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">doVerbose</td><td>Indique si le flag <code>verbose</code> vaut 1 ou 0 </td></tr>
     <tr><td class="paramname">graph</td><td>Le graphe qui va être modifié. Il est passé en argument afin de pouvoir récupérer des statistiques si nécessaire. </td></tr>
     <tr><td class="paramname">wishedTranformation</td><td>Dans quel color space les couleurs devraient être transformées. Voir <a class="el" href="conversion_8h.html">conversion.h</a> pour plus d'informations. </td></tr>
+    <tr><td class="paramname">doRandom</td><td>Si doRandom est mis à vrai, on ajoute les voisins dans un ordre aléatoire. Sinon, on les ajoute dans l'ordre suivant : <code>voisin de droite, voisin de gauche, voisin du bas, voisin du haut</code> </td></tr>
   </table>
   </dd>
 </dl>

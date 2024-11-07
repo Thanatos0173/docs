@@ -1110,48 +1110,48 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
 <div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span><span class="preprocessor">#if !defined(STBI_NO_JPEG) || !defined(STBI_NO_PNG) || !defined(STBI_NO_TGA) || !defined(STBI_NO_HDR)</span></div>
 <div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span><span class="comment">// returns 1 if &quot;a*b + add&quot; has no negative terms/factors and doesn&#39;t overflow</span></div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__mad2sizes_valid(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> add)</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__mad2sizes_valid(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)</div>
 <div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>{</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>   <span class="keywordflow">return</span> stbi__mul2sizes_valid(a, b) &amp;&amp; stbi__addsizes_valid(a*b, add);</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>   <span class="keywordflow">return</span> stbi__mul2sizes_valid(a, b) &amp;&amp; stbi__addsizes_valid(a*b, <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>);</div>
 <div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>}</div>
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span> </div>
 <div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span><span class="comment">// returns 1 if &quot;a*b*c + add&quot; has no negative terms/factors and doesn&#39;t overflow</span></div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__mad3sizes_valid(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> add)</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__mad3sizes_valid(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)</div>
 <div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>{</div>
 <div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>   <span class="keywordflow">return</span> stbi__mul2sizes_valid(a, b) &amp;&amp; stbi__mul2sizes_valid(a*b, c) &amp;&amp;</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>      stbi__addsizes_valid(a*b*c, add);</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>      stbi__addsizes_valid(a*b*c, <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>);</div>
 <div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>}</div>
 <div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span> </div>
 <div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span><span class="comment">// returns 1 if &quot;a*b*c*d + add&quot; has no negative terms/factors and doesn&#39;t overflow</span></div>
 <div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span><span class="preprocessor">#if !defined(STBI_NO_LINEAR) || !defined(STBI_NO_HDR) || !defined(STBI_NO_PNM)</span></div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__mad4sizes_valid(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> add)</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__mad4sizes_valid(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)</div>
 <div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>{</div>
 <div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>   <span class="keywordflow">return</span> stbi__mul2sizes_valid(a, b) &amp;&amp; stbi__mul2sizes_valid(a*b, c) &amp;&amp;</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>      stbi__mul2sizes_valid(a*b*c, d) &amp;&amp; stbi__addsizes_valid(a*b*c*d, add);</div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>      stbi__mul2sizes_valid(a*b*c, d) &amp;&amp; stbi__addsizes_valid(a*b*c*d, <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>);</div>
 <div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>}</div>
 <div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span> </div>
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span><span class="preprocessor">#if !defined(STBI_NO_JPEG) || !defined(STBI_NO_PNG) || !defined(STBI_NO_TGA) || !defined(STBI_NO_HDR)</span></div>
 <div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span><span class="comment">// mallocs with size overflow checking</span></div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__malloc_mad2(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> add)</div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__malloc_mad2(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)</div>
 <div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>{</div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>   <span class="keywordflow">if</span> (!stbi__mad2sizes_valid(a, b, add)) <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>   <span class="keywordflow">return</span> stbi__malloc(a*b + add);</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>   <span class="keywordflow">if</span> (!stbi__mad2sizes_valid(a, b, <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>   <span class="keywordflow">return</span> stbi__malloc(a*b + <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>);</div>
 <div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>}</div>
 <div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span> </div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__malloc_mad3(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> add)</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__malloc_mad3(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)</div>
 <div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>{</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>   <span class="keywordflow">if</span> (!stbi__mad3sizes_valid(a, b, c, add)) <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>   <span class="keywordflow">return</span> stbi__malloc(a*b*c + add);</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>   <span class="keywordflow">if</span> (!stbi__mad3sizes_valid(a, b, c, <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>   <span class="keywordflow">return</span> stbi__malloc(a*b*c + <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>);</div>
 <div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>}</div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span> </div>
 <div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span><span class="preprocessor">#if !defined(STBI_NO_LINEAR) || !defined(STBI_NO_HDR) || !defined(STBI_NO_PNM)</span></div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__malloc_mad4(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> add)</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__malloc_mad4(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> c, <span class="keywordtype">int</span> d, <span class="keywordtype">int</span> <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)</div>
 <div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>{</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>   <span class="keywordflow">if</span> (!stbi__mad4sizes_valid(a, b, c, d, add)) <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>   <span class="keywordflow">return</span> stbi__malloc(a*b*c*d + add);</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>   <span class="keywordflow">if</span> (!stbi__mad4sizes_valid(a, b, c, d, <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>)) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>   <span class="keywordflow">return</span> stbi__malloc(a*b*c*d + <a class="code hl_function" href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a>);</div>
 <div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>}</div>
 <div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span> </div>
@@ -1830,9 +1830,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span><span class="comment">//  assume data buffer is malloced, so malloc a new one and free that one</span></div>
 <div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span><span class="comment">//  only failure mode is malloc failing</span></div>
 <div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span> </div>
-<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> stbi__compute_y(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b)</div>
+<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> stbi__compute_y(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, <span class="keywordtype">int</span> b)</div>
 <div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>{</div>
-<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>   <span class="keywordflow">return</span> (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>) (((r*77) + (g*150) +  (29*b)) &gt;&gt; 8);</div>
+<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>   <span class="keywordflow">return</span> (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>) (((r*77) + (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>*150) +  (29*b)) &gt;&gt; 8);</div>
 <div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>}</div>
 <div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span> </div>
@@ -1887,9 +1887,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span><span class="preprocessor">#if defined(STBI_NO_PNG) &amp;&amp; defined(STBI_NO_PSD)</span></div>
 <div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span><span class="comment">// nothing</span></div>
 <div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span><span class="keyword">static</span> stbi__uint16 stbi__compute_y_16(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b)</div>
+<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span><span class="keyword">static</span> stbi__uint16 stbi__compute_y_16(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, <span class="keywordtype">int</span> b)</div>
 <div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>{</div>
-<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>   <span class="keywordflow">return</span> (stbi__uint16) (((r*77) + (g*150) +  (29*b)) &gt;&gt; 8);</div>
+<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>   <span class="keywordflow">return</span> (stbi__uint16) (((r*77) + (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>*150) +  (29*b)) &gt;&gt; 8);</div>
 <div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>}</div>
 <div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span> </div>
@@ -3748,20 +3748,20 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03662" name="l03662"></a><span class="lineno"> 3662</span>   <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l03663" name="l03663"></a><span class="lineno"> 3663</span>   <span class="keywordflow">for</span> (i=0; i &lt; count; ++i) {</div>
 <div class="line"><a id="l03664" name="l03664"></a><span class="lineno"> 3664</span>      <span class="keywordtype">int</span> y_fixed = (y[i] &lt;&lt; 20) + (1&lt;&lt;19); <span class="comment">// rounding</span></div>
-<div class="line"><a id="l03665" name="l03665"></a><span class="lineno"> 3665</span>      <span class="keywordtype">int</span> r,g,b;</div>
+<div class="line"><a id="l03665" name="l03665"></a><span class="lineno"> 3665</span>      <span class="keywordtype">int</span> r,<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>,b;</div>
 <div class="line"><a id="l03666" name="l03666"></a><span class="lineno"> 3666</span>      <span class="keywordtype">int</span> cr = pcr[i] - 128;</div>
 <div class="line"><a id="l03667" name="l03667"></a><span class="lineno"> 3667</span>      <span class="keywordtype">int</span> cb = pcb[i] - 128;</div>
 <div class="line"><a id="l03668" name="l03668"></a><span class="lineno"> 3668</span>      r = y_fixed +  cr* stbi__float2fixed(1.40200f);</div>
-<div class="line"><a id="l03669" name="l03669"></a><span class="lineno"> 3669</span>      g = y_fixed + (cr*-stbi__float2fixed(0.71414f)) + ((cb*-stbi__float2fixed(0.34414f)) &amp; 0xffff0000);</div>
+<div class="line"><a id="l03669" name="l03669"></a><span class="lineno"> 3669</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = y_fixed + (cr*-stbi__float2fixed(0.71414f)) + ((cb*-stbi__float2fixed(0.34414f)) &amp; 0xffff0000);</div>
 <div class="line"><a id="l03670" name="l03670"></a><span class="lineno"> 3670</span>      b = y_fixed                                     +   cb* stbi__float2fixed(1.77200f);</div>
 <div class="line"><a id="l03671" name="l03671"></a><span class="lineno"> 3671</span>      r &gt;&gt;= 20;</div>
-<div class="line"><a id="l03672" name="l03672"></a><span class="lineno"> 3672</span>      g &gt;&gt;= 20;</div>
+<div class="line"><a id="l03672" name="l03672"></a><span class="lineno"> 3672</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> &gt;&gt;= 20;</div>
 <div class="line"><a id="l03673" name="l03673"></a><span class="lineno"> 3673</span>      b &gt;&gt;= 20;</div>
 <div class="line"><a id="l03674" name="l03674"></a><span class="lineno"> 3674</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) r &gt; 255) { <span class="keywordflow">if</span> (r &lt; 0) r = 0; <span class="keywordflow">else</span> r = 255; }</div>
-<div class="line"><a id="l03675" name="l03675"></a><span class="lineno"> 3675</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) g &gt; 255) { <span class="keywordflow">if</span> (g &lt; 0) g = 0; <span class="keywordflow">else</span> g = 255; }</div>
+<div class="line"><a id="l03675" name="l03675"></a><span class="lineno"> 3675</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> &gt; 255) { <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> &lt; 0) <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = 0; <span class="keywordflow">else</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = 255; }</div>
 <div class="line"><a id="l03676" name="l03676"></a><span class="lineno"> 3676</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) b &gt; 255) { <span class="keywordflow">if</span> (b &lt; 0) b = 0; <span class="keywordflow">else</span> b = 255; }</div>
 <div class="line"><a id="l03677" name="l03677"></a><span class="lineno"> 3677</span>      out[0] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)r;</div>
-<div class="line"><a id="l03678" name="l03678"></a><span class="lineno"> 3678</span>      out[1] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)g;</div>
+<div class="line"><a id="l03678" name="l03678"></a><span class="lineno"> 3678</span>      out[1] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>;</div>
 <div class="line"><a id="l03679" name="l03679"></a><span class="lineno"> 3679</span>      out[2] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)b;</div>
 <div class="line"><a id="l03680" name="l03680"></a><span class="lineno"> 3680</span>      out[3] = 255;</div>
 <div class="line"><a id="l03681" name="l03681"></a><span class="lineno"> 3681</span>      out += step;</div>
@@ -3882,20 +3882,20 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03796" name="l03796"></a><span class="lineno"> 3796</span> </div>
 <div class="line"><a id="l03797" name="l03797"></a><span class="lineno"> 3797</span>   <span class="keywordflow">for</span> (; i &lt; count; ++i) {</div>
 <div class="line"><a id="l03798" name="l03798"></a><span class="lineno"> 3798</span>      <span class="keywordtype">int</span> y_fixed = (y[i] &lt;&lt; 20) + (1&lt;&lt;19); <span class="comment">// rounding</span></div>
-<div class="line"><a id="l03799" name="l03799"></a><span class="lineno"> 3799</span>      <span class="keywordtype">int</span> r,g,b;</div>
+<div class="line"><a id="l03799" name="l03799"></a><span class="lineno"> 3799</span>      <span class="keywordtype">int</span> r,<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>,b;</div>
 <div class="line"><a id="l03800" name="l03800"></a><span class="lineno"> 3800</span>      <span class="keywordtype">int</span> cr = pcr[i] - 128;</div>
 <div class="line"><a id="l03801" name="l03801"></a><span class="lineno"> 3801</span>      <span class="keywordtype">int</span> cb = pcb[i] - 128;</div>
 <div class="line"><a id="l03802" name="l03802"></a><span class="lineno"> 3802</span>      r = y_fixed + cr* stbi__float2fixed(1.40200f);</div>
-<div class="line"><a id="l03803" name="l03803"></a><span class="lineno"> 3803</span>      g = y_fixed + cr*-stbi__float2fixed(0.71414f) + ((cb*-stbi__float2fixed(0.34414f)) &amp; 0xffff0000);</div>
+<div class="line"><a id="l03803" name="l03803"></a><span class="lineno"> 3803</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = y_fixed + cr*-stbi__float2fixed(0.71414f) + ((cb*-stbi__float2fixed(0.34414f)) &amp; 0xffff0000);</div>
 <div class="line"><a id="l03804" name="l03804"></a><span class="lineno"> 3804</span>      b = y_fixed                                   +   cb* stbi__float2fixed(1.77200f);</div>
 <div class="line"><a id="l03805" name="l03805"></a><span class="lineno"> 3805</span>      r &gt;&gt;= 20;</div>
-<div class="line"><a id="l03806" name="l03806"></a><span class="lineno"> 3806</span>      g &gt;&gt;= 20;</div>
+<div class="line"><a id="l03806" name="l03806"></a><span class="lineno"> 3806</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> &gt;&gt;= 20;</div>
 <div class="line"><a id="l03807" name="l03807"></a><span class="lineno"> 3807</span>      b &gt;&gt;= 20;</div>
 <div class="line"><a id="l03808" name="l03808"></a><span class="lineno"> 3808</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) r &gt; 255) { <span class="keywordflow">if</span> (r &lt; 0) r = 0; <span class="keywordflow">else</span> r = 255; }</div>
-<div class="line"><a id="l03809" name="l03809"></a><span class="lineno"> 3809</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) g &gt; 255) { <span class="keywordflow">if</span> (g &lt; 0) g = 0; <span class="keywordflow">else</span> g = 255; }</div>
+<div class="line"><a id="l03809" name="l03809"></a><span class="lineno"> 3809</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> &gt; 255) { <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> &lt; 0) <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = 0; <span class="keywordflow">else</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = 255; }</div>
 <div class="line"><a id="l03810" name="l03810"></a><span class="lineno"> 3810</span>      <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span>) b &gt; 255) { <span class="keywordflow">if</span> (b &lt; 0) b = 0; <span class="keywordflow">else</span> b = 255; }</div>
 <div class="line"><a id="l03811" name="l03811"></a><span class="lineno"> 3811</span>      out[0] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)r;</div>
-<div class="line"><a id="l03812" name="l03812"></a><span class="lineno"> 3812</span>      out[1] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)g;</div>
+<div class="line"><a id="l03812" name="l03812"></a><span class="lineno"> 3812</span>      out[1] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>;</div>
 <div class="line"><a id="l03813" name="l03813"></a><span class="lineno"> 3813</span>      out[2] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)b;</div>
 <div class="line"><a id="l03814" name="l03814"></a><span class="lineno"> 3814</span>      out[3] = 255;</div>
 <div class="line"><a id="l03815" name="l03815"></a><span class="lineno"> 3815</span>      out += step;</div>
@@ -4082,9 +4082,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l03996" name="l03996"></a><span class="lineno"> 3996</span>               <span class="keywordflow">for</span> (i=0; i &lt; z-&gt;s-&gt;img_x; ++i) {</div>
 <div class="line"><a id="l03997" name="l03997"></a><span class="lineno"> 3997</span>                  <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> m = coutput[3][i];</div>
 <div class="line"><a id="l03998" name="l03998"></a><span class="lineno"> 3998</span>                  <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> r = stbi__blinn_8x8(coutput[0][i], m);</div>
-<div class="line"><a id="l03999" name="l03999"></a><span class="lineno"> 3999</span>                  <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> g = stbi__blinn_8x8(coutput[1][i], m);</div>
+<div class="line"><a id="l03999" name="l03999"></a><span class="lineno"> 3999</span>                  <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = stbi__blinn_8x8(coutput[1][i], m);</div>
 <div class="line"><a id="l04000" name="l04000"></a><span class="lineno"> 4000</span>                  <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> b = stbi__blinn_8x8(coutput[2][i], m);</div>
-<div class="line"><a id="l04001" name="l04001"></a><span class="lineno"> 4001</span>                  out[0] = stbi__compute_y(r, g, b);</div>
+<div class="line"><a id="l04001" name="l04001"></a><span class="lineno"> 4001</span>                  out[0] = stbi__compute_y(r, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, b);</div>
 <div class="line"><a id="l04002" name="l04002"></a><span class="lineno"> 4002</span>                  out[1] = 255;</div>
 <div class="line"><a id="l04003" name="l04003"></a><span class="lineno"> 4003</span>                  out += n;</div>
 <div class="line"><a id="l04004" name="l04004"></a><span class="lineno"> 4004</span>               }</div>
@@ -5941,11 +5941,11 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l05855" name="l05855"></a><span class="lineno"> 5855</span>   stbi__uint16 fiveBitMask = 31;</div>
 <div class="line"><a id="l05856" name="l05856"></a><span class="lineno"> 5856</span>   <span class="comment">// we have 3 channels with 5bits each</span></div>
 <div class="line"><a id="l05857" name="l05857"></a><span class="lineno"> 5857</span>   <span class="keywordtype">int</span> r = (px &gt;&gt; 10) &amp; fiveBitMask;</div>
-<div class="line"><a id="l05858" name="l05858"></a><span class="lineno"> 5858</span>   <span class="keywordtype">int</span> g = (px &gt;&gt; 5) &amp; fiveBitMask;</div>
+<div class="line"><a id="l05858" name="l05858"></a><span class="lineno"> 5858</span>   <span class="keywordtype">int</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = (px &gt;&gt; 5) &amp; fiveBitMask;</div>
 <div class="line"><a id="l05859" name="l05859"></a><span class="lineno"> 5859</span>   <span class="keywordtype">int</span> b = px &amp; fiveBitMask;</div>
 <div class="line"><a id="l05860" name="l05860"></a><span class="lineno"> 5860</span>   <span class="comment">// Note that this saves the data in RGB(A) order, so it doesn&#39;t need to be swapped later</span></div>
 <div class="line"><a id="l05861" name="l05861"></a><span class="lineno"> 5861</span>   out[0] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)((r * 255)/31);</div>
-<div class="line"><a id="l05862" name="l05862"></a><span class="lineno"> 5862</span>   out[1] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)((g * 255)/31);</div>
+<div class="line"><a id="l05862" name="l05862"></a><span class="lineno"> 5862</span>   out[1] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)((<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> * 255)/31);</div>
 <div class="line"><a id="l05863" name="l05863"></a><span class="lineno"> 5863</span>   out[2] = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>)((b * 255)/31);</div>
 <div class="line"><a id="l05864" name="l05864"></a><span class="lineno"> 5864</span> </div>
 <div class="line"><a id="l05865" name="l05865"></a><span class="lineno"> 5865</span>   <span class="comment">// some people claim that the most significant bit might be used for alpha</span></div>
@@ -6691,7 +6691,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06605" name="l06605"></a><span class="lineno"> 6605</span>   }</div>
 <div class="line"><a id="l06606" name="l06606"></a><span class="lineno"> 6606</span>}</div>
 <div class="line"><a id="l06607" name="l06607"></a><span class="lineno"> 6607</span> </div>
-<div class="line"><a id="l06608" name="l06608"></a><span class="lineno"> 6608</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__gif_header(stbi__context *s, stbi__gif *g, <span class="keywordtype">int</span> *comp, <span class="keywordtype">int</span> is_info)</div>
+<div class="line"><a id="l06608" name="l06608"></a><span class="lineno"> 6608</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__gif_header(stbi__context *s, stbi__gif *<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, <span class="keywordtype">int</span> *comp, <span class="keywordtype">int</span> is_info)</div>
 <div class="line"><a id="l06609" name="l06609"></a><span class="lineno"> 6609</span>{</div>
 <div class="line"><a id="l06610" name="l06610"></a><span class="lineno"> 6610</span>   <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> version;</div>
 <div class="line"><a id="l06611" name="l06611"></a><span class="lineno"> 6611</span>   <span class="keywordflow">if</span> (stbi__get8(s) != <span class="charliteral">&#39;G&#39;</span> || stbi__get8(s) != <span class="charliteral">&#39;I&#39;</span> || stbi__get8(s) != <span class="charliteral">&#39;F&#39;</span> || stbi__get8(s) != <span class="charliteral">&#39;8&#39;</span>)</div>
@@ -6702,79 +6702,79 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06616" name="l06616"></a><span class="lineno"> 6616</span>   <span class="keywordflow">if</span> (stbi__get8(s) != <span class="charliteral">&#39;a&#39;</span>)                <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;not GIF&quot;</span>, <span class="stringliteral">&quot;Corrupt GIF&quot;</span>);</div>
 <div class="line"><a id="l06617" name="l06617"></a><span class="lineno"> 6617</span> </div>
 <div class="line"><a id="l06618" name="l06618"></a><span class="lineno"> 6618</span>   stbi__g_failure_reason = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l06619" name="l06619"></a><span class="lineno"> 6619</span>   g-&gt;w = stbi__get16le(s);</div>
-<div class="line"><a id="l06620" name="l06620"></a><span class="lineno"> 6620</span>   g-&gt;h = stbi__get16le(s);</div>
-<div class="line"><a id="l06621" name="l06621"></a><span class="lineno"> 6621</span>   g-&gt;flags = stbi__get8(s);</div>
-<div class="line"><a id="l06622" name="l06622"></a><span class="lineno"> 6622</span>   g-&gt;bgindex = stbi__get8(s);</div>
-<div class="line"><a id="l06623" name="l06623"></a><span class="lineno"> 6623</span>   g-&gt;ratio = stbi__get8(s);</div>
-<div class="line"><a id="l06624" name="l06624"></a><span class="lineno"> 6624</span>   g-&gt;transparent = -1;</div>
+<div class="line"><a id="l06619" name="l06619"></a><span class="lineno"> 6619</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w = stbi__get16le(s);</div>
+<div class="line"><a id="l06620" name="l06620"></a><span class="lineno"> 6620</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h = stbi__get16le(s);</div>
+<div class="line"><a id="l06621" name="l06621"></a><span class="lineno"> 6621</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;flags = stbi__get8(s);</div>
+<div class="line"><a id="l06622" name="l06622"></a><span class="lineno"> 6622</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;bgindex = stbi__get8(s);</div>
+<div class="line"><a id="l06623" name="l06623"></a><span class="lineno"> 6623</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;ratio = stbi__get8(s);</div>
+<div class="line"><a id="l06624" name="l06624"></a><span class="lineno"> 6624</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent = -1;</div>
 <div class="line"><a id="l06625" name="l06625"></a><span class="lineno"> 6625</span> </div>
-<div class="line"><a id="l06626" name="l06626"></a><span class="lineno"> 6626</span>   <span class="keywordflow">if</span> (g-&gt;w &gt; STBI_MAX_DIMENSIONS) <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;too large&quot;</span>,<span class="stringliteral">&quot;Very large image (corrupt?)&quot;</span>);</div>
-<div class="line"><a id="l06627" name="l06627"></a><span class="lineno"> 6627</span>   <span class="keywordflow">if</span> (g-&gt;h &gt; STBI_MAX_DIMENSIONS) <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;too large&quot;</span>,<span class="stringliteral">&quot;Very large image (corrupt?)&quot;</span>);</div>
+<div class="line"><a id="l06626" name="l06626"></a><span class="lineno"> 6626</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w &gt; STBI_MAX_DIMENSIONS) <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;too large&quot;</span>,<span class="stringliteral">&quot;Very large image (corrupt?)&quot;</span>);</div>
+<div class="line"><a id="l06627" name="l06627"></a><span class="lineno"> 6627</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h &gt; STBI_MAX_DIMENSIONS) <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;too large&quot;</span>,<span class="stringliteral">&quot;Very large image (corrupt?)&quot;</span>);</div>
 <div class="line"><a id="l06628" name="l06628"></a><span class="lineno"> 6628</span> </div>
 <div class="line"><a id="l06629" name="l06629"></a><span class="lineno"> 6629</span>   <span class="keywordflow">if</span> (comp != 0) *comp = 4;  <span class="comment">// can&#39;t actually tell whether it&#39;s 3 or 4 until we parse the comments</span></div>
 <div class="line"><a id="l06630" name="l06630"></a><span class="lineno"> 6630</span> </div>
 <div class="line"><a id="l06631" name="l06631"></a><span class="lineno"> 6631</span>   <span class="keywordflow">if</span> (is_info) <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l06632" name="l06632"></a><span class="lineno"> 6632</span> </div>
-<div class="line"><a id="l06633" name="l06633"></a><span class="lineno"> 6633</span>   <span class="keywordflow">if</span> (g-&gt;flags &amp; 0x80)</div>
-<div class="line"><a id="l06634" name="l06634"></a><span class="lineno"> 6634</span>      stbi__gif_parse_colortable(s,g-&gt;pal, 2 &lt;&lt; (g-&gt;flags &amp; 7), -1);</div>
+<div class="line"><a id="l06633" name="l06633"></a><span class="lineno"> 6633</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;flags &amp; 0x80)</div>
+<div class="line"><a id="l06634" name="l06634"></a><span class="lineno"> 6634</span>      stbi__gif_parse_colortable(s,<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;pal, 2 &lt;&lt; (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;flags &amp; 7), -1);</div>
 <div class="line"><a id="l06635" name="l06635"></a><span class="lineno"> 6635</span> </div>
 <div class="line"><a id="l06636" name="l06636"></a><span class="lineno"> 6636</span>   <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l06637" name="l06637"></a><span class="lineno"> 6637</span>}</div>
 <div class="line"><a id="l06638" name="l06638"></a><span class="lineno"> 6638</span> </div>
 <div class="line"><a id="l06639" name="l06639"></a><span class="lineno"> 6639</span><span class="keyword">static</span> <span class="keywordtype">int</span> stbi__gif_info_raw(stbi__context *s, <span class="keywordtype">int</span> *x, <span class="keywordtype">int</span> *y, <span class="keywordtype">int</span> *comp)</div>
 <div class="line"><a id="l06640" name="l06640"></a><span class="lineno"> 6640</span>{</div>
-<div class="line"><a id="l06641" name="l06641"></a><span class="lineno"> 6641</span>   stbi__gif* g = (stbi__gif*) stbi__malloc(<span class="keyword">sizeof</span>(stbi__gif));</div>
-<div class="line"><a id="l06642" name="l06642"></a><span class="lineno"> 6642</span>   <span class="keywordflow">if</span> (!g) <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;outofmem&quot;</span>, <span class="stringliteral">&quot;Out of memory&quot;</span>);</div>
-<div class="line"><a id="l06643" name="l06643"></a><span class="lineno"> 6643</span>   <span class="keywordflow">if</span> (!stbi__gif_header(s, g, comp, 1)) {</div>
-<div class="line"><a id="l06644" name="l06644"></a><span class="lineno"> 6644</span>      STBI_FREE(g);</div>
+<div class="line"><a id="l06641" name="l06641"></a><span class="lineno"> 6641</span>   stbi__gif* <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = (stbi__gif*) stbi__malloc(<span class="keyword">sizeof</span>(stbi__gif));</div>
+<div class="line"><a id="l06642" name="l06642"></a><span class="lineno"> 6642</span>   <span class="keywordflow">if</span> (!<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>) <span class="keywordflow">return</span> stbi__err(<span class="stringliteral">&quot;outofmem&quot;</span>, <span class="stringliteral">&quot;Out of memory&quot;</span>);</div>
+<div class="line"><a id="l06643" name="l06643"></a><span class="lineno"> 6643</span>   <span class="keywordflow">if</span> (!stbi__gif_header(s, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, comp, 1)) {</div>
+<div class="line"><a id="l06644" name="l06644"></a><span class="lineno"> 6644</span>      STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>);</div>
 <div class="line"><a id="l06645" name="l06645"></a><span class="lineno"> 6645</span>      stbi__rewind( s );</div>
 <div class="line"><a id="l06646" name="l06646"></a><span class="lineno"> 6646</span>      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l06647" name="l06647"></a><span class="lineno"> 6647</span>   }</div>
-<div class="line"><a id="l06648" name="l06648"></a><span class="lineno"> 6648</span>   <span class="keywordflow">if</span> (x) *x = g-&gt;w;</div>
-<div class="line"><a id="l06649" name="l06649"></a><span class="lineno"> 6649</span>   <span class="keywordflow">if</span> (y) *y = g-&gt;h;</div>
-<div class="line"><a id="l06650" name="l06650"></a><span class="lineno"> 6650</span>   STBI_FREE(g);</div>
+<div class="line"><a id="l06648" name="l06648"></a><span class="lineno"> 6648</span>   <span class="keywordflow">if</span> (x) *x = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w;</div>
+<div class="line"><a id="l06649" name="l06649"></a><span class="lineno"> 6649</span>   <span class="keywordflow">if</span> (y) *y = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h;</div>
+<div class="line"><a id="l06650" name="l06650"></a><span class="lineno"> 6650</span>   STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>);</div>
 <div class="line"><a id="l06651" name="l06651"></a><span class="lineno"> 6651</span>   <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l06652" name="l06652"></a><span class="lineno"> 6652</span>}</div>
 <div class="line"><a id="l06653" name="l06653"></a><span class="lineno"> 6653</span> </div>
-<div class="line"><a id="l06654" name="l06654"></a><span class="lineno"> 6654</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbi__out_gif_code(stbi__gif *g, stbi__uint16 code)</div>
+<div class="line"><a id="l06654" name="l06654"></a><span class="lineno"> 6654</span><span class="keyword">static</span> <span class="keywordtype">void</span> stbi__out_gif_code(stbi__gif *<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, stbi__uint16 code)</div>
 <div class="line"><a id="l06655" name="l06655"></a><span class="lineno"> 6655</span>{</div>
 <div class="line"><a id="l06656" name="l06656"></a><span class="lineno"> 6656</span>   <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *p, *c;</div>
 <div class="line"><a id="l06657" name="l06657"></a><span class="lineno"> 6657</span>   <span class="keywordtype">int</span> idx;</div>
 <div class="line"><a id="l06658" name="l06658"></a><span class="lineno"> 6658</span> </div>
 <div class="line"><a id="l06659" name="l06659"></a><span class="lineno"> 6659</span>   <span class="comment">// recurse to decode the prefixes, since the linked-list is backwards,</span></div>
 <div class="line"><a id="l06660" name="l06660"></a><span class="lineno"> 6660</span>   <span class="comment">// and working backwards through an interleaved image would be nasty</span></div>
-<div class="line"><a id="l06661" name="l06661"></a><span class="lineno"> 6661</span>   <span class="keywordflow">if</span> (g-&gt;codes[code].prefix &gt;= 0)</div>
-<div class="line"><a id="l06662" name="l06662"></a><span class="lineno"> 6662</span>      stbi__out_gif_code(g, g-&gt;codes[code].prefix);</div>
+<div class="line"><a id="l06661" name="l06661"></a><span class="lineno"> 6661</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[code].prefix &gt;= 0)</div>
+<div class="line"><a id="l06662" name="l06662"></a><span class="lineno"> 6662</span>      stbi__out_gif_code(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[code].prefix);</div>
 <div class="line"><a id="l06663" name="l06663"></a><span class="lineno"> 6663</span> </div>
-<div class="line"><a id="l06664" name="l06664"></a><span class="lineno"> 6664</span>   <span class="keywordflow">if</span> (g-&gt;cur_y &gt;= g-&gt;max_y) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l06664" name="l06664"></a><span class="lineno"> 6664</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y &gt;= <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;max_y) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l06665" name="l06665"></a><span class="lineno"> 6665</span> </div>
-<div class="line"><a id="l06666" name="l06666"></a><span class="lineno"> 6666</span>   idx = g-&gt;cur_x + g-&gt;cur_y;</div>
-<div class="line"><a id="l06667" name="l06667"></a><span class="lineno"> 6667</span>   p = &amp;g-&gt;out[idx];</div>
-<div class="line"><a id="l06668" name="l06668"></a><span class="lineno"> 6668</span>   g-&gt;history[idx / 4] = 1;</div>
+<div class="line"><a id="l06666" name="l06666"></a><span class="lineno"> 6666</span>   idx = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_x + <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y;</div>
+<div class="line"><a id="l06667" name="l06667"></a><span class="lineno"> 6667</span>   p = &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out[idx];</div>
+<div class="line"><a id="l06668" name="l06668"></a><span class="lineno"> 6668</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history[idx / 4] = 1;</div>
 <div class="line"><a id="l06669" name="l06669"></a><span class="lineno"> 6669</span> </div>
-<div class="line"><a id="l06670" name="l06670"></a><span class="lineno"> 6670</span>   c = &amp;g-&gt;color_table[g-&gt;codes[code].suffix * 4];</div>
+<div class="line"><a id="l06670" name="l06670"></a><span class="lineno"> 6670</span>   c = &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;color_table[<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[code].suffix * 4];</div>
 <div class="line"><a id="l06671" name="l06671"></a><span class="lineno"> 6671</span>   <span class="keywordflow">if</span> (c[3] &gt; 128) { <span class="comment">// don&#39;t render transparent pixels;</span></div>
 <div class="line"><a id="l06672" name="l06672"></a><span class="lineno"> 6672</span>      p[0] = c[2];</div>
 <div class="line"><a id="l06673" name="l06673"></a><span class="lineno"> 6673</span>      p[1] = c[1];</div>
 <div class="line"><a id="l06674" name="l06674"></a><span class="lineno"> 6674</span>      p[2] = c[0];</div>
 <div class="line"><a id="l06675" name="l06675"></a><span class="lineno"> 6675</span>      p[3] = c[3];</div>
 <div class="line"><a id="l06676" name="l06676"></a><span class="lineno"> 6676</span>   }</div>
-<div class="line"><a id="l06677" name="l06677"></a><span class="lineno"> 6677</span>   g-&gt;cur_x += 4;</div>
+<div class="line"><a id="l06677" name="l06677"></a><span class="lineno"> 6677</span>   <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_x += 4;</div>
 <div class="line"><a id="l06678" name="l06678"></a><span class="lineno"> 6678</span> </div>
-<div class="line"><a id="l06679" name="l06679"></a><span class="lineno"> 6679</span>   <span class="keywordflow">if</span> (g-&gt;cur_x &gt;= g-&gt;max_x) {</div>
-<div class="line"><a id="l06680" name="l06680"></a><span class="lineno"> 6680</span>      g-&gt;cur_x = g-&gt;start_x;</div>
-<div class="line"><a id="l06681" name="l06681"></a><span class="lineno"> 6681</span>      g-&gt;cur_y += g-&gt;step;</div>
+<div class="line"><a id="l06679" name="l06679"></a><span class="lineno"> 6679</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_x &gt;= <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;max_x) {</div>
+<div class="line"><a id="l06680" name="l06680"></a><span class="lineno"> 6680</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_x = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_x;</div>
+<div class="line"><a id="l06681" name="l06681"></a><span class="lineno"> 6681</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y += <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;step;</div>
 <div class="line"><a id="l06682" name="l06682"></a><span class="lineno"> 6682</span> </div>
-<div class="line"><a id="l06683" name="l06683"></a><span class="lineno"> 6683</span>      <span class="keywordflow">while</span> (g-&gt;cur_y &gt;= g-&gt;max_y &amp;&amp; g-&gt;parse &gt; 0) {</div>
-<div class="line"><a id="l06684" name="l06684"></a><span class="lineno"> 6684</span>         g-&gt;step = (1 &lt;&lt; g-&gt;parse) * g-&gt;line_size;</div>
-<div class="line"><a id="l06685" name="l06685"></a><span class="lineno"> 6685</span>         g-&gt;cur_y = g-&gt;start_y + (g-&gt;step &gt;&gt; 1);</div>
-<div class="line"><a id="l06686" name="l06686"></a><span class="lineno"> 6686</span>         --g-&gt;parse;</div>
+<div class="line"><a id="l06683" name="l06683"></a><span class="lineno"> 6683</span>      <span class="keywordflow">while</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y &gt;= <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;max_y &amp;&amp; <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;parse &gt; 0) {</div>
+<div class="line"><a id="l06684" name="l06684"></a><span class="lineno"> 6684</span>         <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;step = (1 &lt;&lt; <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;parse) * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;line_size;</div>
+<div class="line"><a id="l06685" name="l06685"></a><span class="lineno"> 6685</span>         <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_y + (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;step &gt;&gt; 1);</div>
+<div class="line"><a id="l06686" name="l06686"></a><span class="lineno"> 6686</span>         --<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;parse;</div>
 <div class="line"><a id="l06687" name="l06687"></a><span class="lineno"> 6687</span>      }</div>
 <div class="line"><a id="l06688" name="l06688"></a><span class="lineno"> 6688</span>   }</div>
 <div class="line"><a id="l06689" name="l06689"></a><span class="lineno"> 6689</span>}</div>
 <div class="line"><a id="l06690" name="l06690"></a><span class="lineno"> 6690</span> </div>
-<div class="line"><a id="l06691" name="l06691"></a><span class="lineno"> 6691</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *stbi__process_gif_raster(stbi__context *s, stbi__gif *g)</div>
+<div class="line"><a id="l06691" name="l06691"></a><span class="lineno"> 6691</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *stbi__process_gif_raster(stbi__context *s, stbi__gif *<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>)</div>
 <div class="line"><a id="l06692" name="l06692"></a><span class="lineno"> 6692</span>{</div>
 <div class="line"><a id="l06693" name="l06693"></a><span class="lineno"> 6693</span>   <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> lzw_cs;</div>
 <div class="line"><a id="l06694" name="l06694"></a><span class="lineno"> 6694</span>   stbi__int32 len, init_code;</div>
@@ -6791,9 +6791,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06705" name="l06705"></a><span class="lineno"> 6705</span>   bits = 0;</div>
 <div class="line"><a id="l06706" name="l06706"></a><span class="lineno"> 6706</span>   valid_bits = 0;</div>
 <div class="line"><a id="l06707" name="l06707"></a><span class="lineno"> 6707</span>   <span class="keywordflow">for</span> (init_code = 0; init_code &lt; clear; init_code++) {</div>
-<div class="line"><a id="l06708" name="l06708"></a><span class="lineno"> 6708</span>      g-&gt;codes[init_code].prefix = -1;</div>
-<div class="line"><a id="l06709" name="l06709"></a><span class="lineno"> 6709</span>      g-&gt;codes[init_code].first = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>) init_code;</div>
-<div class="line"><a id="l06710" name="l06710"></a><span class="lineno"> 6710</span>      g-&gt;codes[init_code].suffix = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>) init_code;</div>
+<div class="line"><a id="l06708" name="l06708"></a><span class="lineno"> 6708</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[init_code].prefix = -1;</div>
+<div class="line"><a id="l06709" name="l06709"></a><span class="lineno"> 6709</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[init_code].first = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>) init_code;</div>
+<div class="line"><a id="l06710" name="l06710"></a><span class="lineno"> 6710</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[init_code].suffix = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>) init_code;</div>
 <div class="line"><a id="l06711" name="l06711"></a><span class="lineno"> 6711</span>   }</div>
 <div class="line"><a id="l06712" name="l06712"></a><span class="lineno"> 6712</span> </div>
 <div class="line"><a id="l06713" name="l06713"></a><span class="lineno"> 6713</span>   <span class="comment">// support no starting clear code</span></div>
@@ -6806,7 +6806,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06720" name="l06720"></a><span class="lineno"> 6720</span>         <span class="keywordflow">if</span> (len == 0) {</div>
 <div class="line"><a id="l06721" name="l06721"></a><span class="lineno"> 6721</span>            len = stbi__get8(s); <span class="comment">// start new block</span></div>
 <div class="line"><a id="l06722" name="l06722"></a><span class="lineno"> 6722</span>            <span class="keywordflow">if</span> (len == 0)</div>
-<div class="line"><a id="l06723" name="l06723"></a><span class="lineno"> 6723</span>               <span class="keywordflow">return</span> g-&gt;out;</div>
+<div class="line"><a id="l06723" name="l06723"></a><span class="lineno"> 6723</span>               <span class="keywordflow">return</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out;</div>
 <div class="line"><a id="l06724" name="l06724"></a><span class="lineno"> 6724</span>         }</div>
 <div class="line"><a id="l06725" name="l06725"></a><span class="lineno"> 6725</span>         --len;</div>
 <div class="line"><a id="l06726" name="l06726"></a><span class="lineno"> 6726</span>         bits |= (stbi__int32) stbi__get8(s) &lt;&lt; valid_bits;</div>
@@ -6826,25 +6826,25 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06740" name="l06740"></a><span class="lineno"> 6740</span>            stbi__skip(s, len);</div>
 <div class="line"><a id="l06741" name="l06741"></a><span class="lineno"> 6741</span>            <span class="keywordflow">while</span> ((len = stbi__get8(s)) &gt; 0)</div>
 <div class="line"><a id="l06742" name="l06742"></a><span class="lineno"> 6742</span>               stbi__skip(s,len);</div>
-<div class="line"><a id="l06743" name="l06743"></a><span class="lineno"> 6743</span>            <span class="keywordflow">return</span> g-&gt;out;</div>
+<div class="line"><a id="l06743" name="l06743"></a><span class="lineno"> 6743</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out;</div>
 <div class="line"><a id="l06744" name="l06744"></a><span class="lineno"> 6744</span>         } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (code &lt;= avail) {</div>
 <div class="line"><a id="l06745" name="l06745"></a><span class="lineno"> 6745</span>            <span class="keywordflow">if</span> (first) {</div>
 <div class="line"><a id="l06746" name="l06746"></a><span class="lineno"> 6746</span>               <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;no clear code&quot;</span>, <span class="stringliteral">&quot;Corrupt GIF&quot;</span>);</div>
 <div class="line"><a id="l06747" name="l06747"></a><span class="lineno"> 6747</span>            }</div>
 <div class="line"><a id="l06748" name="l06748"></a><span class="lineno"> 6748</span> </div>
 <div class="line"><a id="l06749" name="l06749"></a><span class="lineno"> 6749</span>            <span class="keywordflow">if</span> (oldcode &gt;= 0) {</div>
-<div class="line"><a id="l06750" name="l06750"></a><span class="lineno"> 6750</span>               p = &amp;g-&gt;codes[avail++];</div>
+<div class="line"><a id="l06750" name="l06750"></a><span class="lineno"> 6750</span>               p = &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[avail++];</div>
 <div class="line"><a id="l06751" name="l06751"></a><span class="lineno"> 6751</span>               <span class="keywordflow">if</span> (avail &gt; 8192) {</div>
 <div class="line"><a id="l06752" name="l06752"></a><span class="lineno"> 6752</span>                  <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;too many codes&quot;</span>, <span class="stringliteral">&quot;Corrupt GIF&quot;</span>);</div>
 <div class="line"><a id="l06753" name="l06753"></a><span class="lineno"> 6753</span>               }</div>
 <div class="line"><a id="l06754" name="l06754"></a><span class="lineno"> 6754</span> </div>
 <div class="line"><a id="l06755" name="l06755"></a><span class="lineno"> 6755</span>               p-&gt;prefix = (stbi__int16) oldcode;</div>
-<div class="line"><a id="l06756" name="l06756"></a><span class="lineno"> 6756</span>               p-&gt;first = g-&gt;codes[oldcode].first;</div>
-<div class="line"><a id="l06757" name="l06757"></a><span class="lineno"> 6757</span>               p-&gt;suffix = (code == avail) ? p-&gt;first : g-&gt;codes[code].first;</div>
+<div class="line"><a id="l06756" name="l06756"></a><span class="lineno"> 6756</span>               p-&gt;first = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[oldcode].first;</div>
+<div class="line"><a id="l06757" name="l06757"></a><span class="lineno"> 6757</span>               p-&gt;suffix = (code == avail) ? p-&gt;first : <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;codes[code].first;</div>
 <div class="line"><a id="l06758" name="l06758"></a><span class="lineno"> 6758</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (code == avail)</div>
 <div class="line"><a id="l06759" name="l06759"></a><span class="lineno"> 6759</span>               <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;illegal code in raster&quot;</span>, <span class="stringliteral">&quot;Corrupt GIF&quot;</span>);</div>
 <div class="line"><a id="l06760" name="l06760"></a><span class="lineno"> 6760</span> </div>
-<div class="line"><a id="l06761" name="l06761"></a><span class="lineno"> 6761</span>            stbi__out_gif_code(g, (stbi__uint16) code);</div>
+<div class="line"><a id="l06761" name="l06761"></a><span class="lineno"> 6761</span>            stbi__out_gif_code(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, (stbi__uint16) code);</div>
 <div class="line"><a id="l06762" name="l06762"></a><span class="lineno"> 6762</span> </div>
 <div class="line"><a id="l06763" name="l06763"></a><span class="lineno"> 6763</span>            <span class="keywordflow">if</span> ((avail &amp; codemask) == 0 &amp;&amp; avail &lt;= 0x0FFF) {</div>
 <div class="line"><a id="l06764" name="l06764"></a><span class="lineno"> 6764</span>               codesize++;</div>
@@ -6861,7 +6861,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06775" name="l06775"></a><span class="lineno"> 6775</span> </div>
 <div class="line"><a id="l06776" name="l06776"></a><span class="lineno"> 6776</span><span class="comment">// this function is designed to support animated gifs, although stb_image doesn&#39;t support it</span></div>
 <div class="line"><a id="l06777" name="l06777"></a><span class="lineno"> 6777</span><span class="comment">// two back is the image from two frames ago, used for a very specific disposal format</span></div>
-<div class="line"><a id="l06778" name="l06778"></a><span class="lineno"> 6778</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *stbi__gif_load_next(stbi__context *s, stbi__gif *g, <span class="keywordtype">int</span> *comp, <span class="keywordtype">int</span> req_comp, <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *two_back)</div>
+<div class="line"><a id="l06778" name="l06778"></a><span class="lineno"> 6778</span><span class="keyword">static</span> <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *stbi__gif_load_next(stbi__context *s, stbi__gif *<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, <span class="keywordtype">int</span> *comp, <span class="keywordtype">int</span> req_comp, <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *two_back)</div>
 <div class="line"><a id="l06779" name="l06779"></a><span class="lineno"> 6779</span>{</div>
 <div class="line"><a id="l06780" name="l06780"></a><span class="lineno"> 6780</span>   <span class="keywordtype">int</span> dispose;</div>
 <div class="line"><a id="l06781" name="l06781"></a><span class="lineno"> 6781</span>   <span class="keywordtype">int</span> first_frame;</div>
@@ -6871,28 +6871,28 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06785" name="l06785"></a><span class="lineno"> 6785</span> </div>
 <div class="line"><a id="l06786" name="l06786"></a><span class="lineno"> 6786</span>   <span class="comment">// on first frame, any non-written pixels get the background colour (non-transparent)</span></div>
 <div class="line"><a id="l06787" name="l06787"></a><span class="lineno"> 6787</span>   first_frame = 0;</div>
-<div class="line"><a id="l06788" name="l06788"></a><span class="lineno"> 6788</span>   <span class="keywordflow">if</span> (g-&gt;out == 0) {</div>
-<div class="line"><a id="l06789" name="l06789"></a><span class="lineno"> 6789</span>      <span class="keywordflow">if</span> (!stbi__gif_header(s, g, comp,0)) <span class="keywordflow">return</span> 0; <span class="comment">// stbi__g_failure_reason set by stbi__gif_header</span></div>
-<div class="line"><a id="l06790" name="l06790"></a><span class="lineno"> 6790</span>      <span class="keywordflow">if</span> (!stbi__mad3sizes_valid(4, g-&gt;w, g-&gt;h, 0))</div>
+<div class="line"><a id="l06788" name="l06788"></a><span class="lineno"> 6788</span>   <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out == 0) {</div>
+<div class="line"><a id="l06789" name="l06789"></a><span class="lineno"> 6789</span>      <span class="keywordflow">if</span> (!stbi__gif_header(s, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, comp,0)) <span class="keywordflow">return</span> 0; <span class="comment">// stbi__g_failure_reason set by stbi__gif_header</span></div>
+<div class="line"><a id="l06790" name="l06790"></a><span class="lineno"> 6790</span>      <span class="keywordflow">if</span> (!stbi__mad3sizes_valid(4, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h, 0))</div>
 <div class="line"><a id="l06791" name="l06791"></a><span class="lineno"> 6791</span>         <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;too large&quot;</span>, <span class="stringliteral">&quot;GIF image is too large&quot;</span>);</div>
-<div class="line"><a id="l06792" name="l06792"></a><span class="lineno"> 6792</span>      pcount = g-&gt;w * g-&gt;h;</div>
-<div class="line"><a id="l06793" name="l06793"></a><span class="lineno"> 6793</span>      g-&gt;out = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) stbi__malloc(4 * pcount);</div>
-<div class="line"><a id="l06794" name="l06794"></a><span class="lineno"> 6794</span>      g-&gt;background = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) stbi__malloc(4 * pcount);</div>
-<div class="line"><a id="l06795" name="l06795"></a><span class="lineno"> 6795</span>      g-&gt;history = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) stbi__malloc(pcount);</div>
-<div class="line"><a id="l06796" name="l06796"></a><span class="lineno"> 6796</span>      <span class="keywordflow">if</span> (!g-&gt;out || !g-&gt;background || !g-&gt;history)</div>
+<div class="line"><a id="l06792" name="l06792"></a><span class="lineno"> 6792</span>      pcount = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h;</div>
+<div class="line"><a id="l06793" name="l06793"></a><span class="lineno"> 6793</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) stbi__malloc(4 * pcount);</div>
+<div class="line"><a id="l06794" name="l06794"></a><span class="lineno"> 6794</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;background = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) stbi__malloc(4 * pcount);</div>
+<div class="line"><a id="l06795" name="l06795"></a><span class="lineno"> 6795</span>      <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) stbi__malloc(pcount);</div>
+<div class="line"><a id="l06796" name="l06796"></a><span class="lineno"> 6796</span>      <span class="keywordflow">if</span> (!<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out || !<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;background || !<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history)</div>
 <div class="line"><a id="l06797" name="l06797"></a><span class="lineno"> 6797</span>         <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;outofmem&quot;</span>, <span class="stringliteral">&quot;Out of memory&quot;</span>);</div>
 <div class="line"><a id="l06798" name="l06798"></a><span class="lineno"> 6798</span> </div>
 <div class="line"><a id="l06799" name="l06799"></a><span class="lineno"> 6799</span>      <span class="comment">// image is treated as &quot;transparent&quot; at the start - ie, nothing overwrites the current background;</span></div>
 <div class="line"><a id="l06800" name="l06800"></a><span class="lineno"> 6800</span>      <span class="comment">// background colour is only used for pixels that are not rendered first frame, after that &quot;background&quot;</span></div>
 <div class="line"><a id="l06801" name="l06801"></a><span class="lineno"> 6801</span>      <span class="comment">// color refers to the color that was there the previous frame.</span></div>
-<div class="line"><a id="l06802" name="l06802"></a><span class="lineno"> 6802</span>      memset(g-&gt;out, 0x00, 4 * pcount);</div>
-<div class="line"><a id="l06803" name="l06803"></a><span class="lineno"> 6803</span>      memset(g-&gt;background, 0x00, 4 * pcount); <span class="comment">// state of the background (starts transparent)</span></div>
-<div class="line"><a id="l06804" name="l06804"></a><span class="lineno"> 6804</span>      memset(g-&gt;history, 0x00, pcount);        <span class="comment">// pixels that were affected previous frame</span></div>
+<div class="line"><a id="l06802" name="l06802"></a><span class="lineno"> 6802</span>      memset(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out, 0x00, 4 * pcount);</div>
+<div class="line"><a id="l06803" name="l06803"></a><span class="lineno"> 6803</span>      memset(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;background, 0x00, 4 * pcount); <span class="comment">// state of the background (starts transparent)</span></div>
+<div class="line"><a id="l06804" name="l06804"></a><span class="lineno"> 6804</span>      memset(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history, 0x00, pcount);        <span class="comment">// pixels that were affected previous frame</span></div>
 <div class="line"><a id="l06805" name="l06805"></a><span class="lineno"> 6805</span>      first_frame = 1;</div>
 <div class="line"><a id="l06806" name="l06806"></a><span class="lineno"> 6806</span>   } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l06807" name="l06807"></a><span class="lineno"> 6807</span>      <span class="comment">// second frame - how do we dispose of the previous one?</span></div>
-<div class="line"><a id="l06808" name="l06808"></a><span class="lineno"> 6808</span>      dispose = (g-&gt;eflags &amp; 0x1C) &gt;&gt; 2;</div>
-<div class="line"><a id="l06809" name="l06809"></a><span class="lineno"> 6809</span>      pcount = g-&gt;w * g-&gt;h;</div>
+<div class="line"><a id="l06808" name="l06808"></a><span class="lineno"> 6808</span>      dispose = (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;eflags &amp; 0x1C) &gt;&gt; 2;</div>
+<div class="line"><a id="l06809" name="l06809"></a><span class="lineno"> 6809</span>      pcount = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h;</div>
 <div class="line"><a id="l06810" name="l06810"></a><span class="lineno"> 6810</span> </div>
 <div class="line"><a id="l06811" name="l06811"></a><span class="lineno"> 6811</span>      <span class="keywordflow">if</span> ((dispose == 3) &amp;&amp; (two_back == 0)) {</div>
 <div class="line"><a id="l06812" name="l06812"></a><span class="lineno"> 6812</span>         dispose = 2; <span class="comment">// if I don&#39;t have an image to revert back to, default to the old background</span></div>
@@ -6900,15 +6900,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06814" name="l06814"></a><span class="lineno"> 6814</span> </div>
 <div class="line"><a id="l06815" name="l06815"></a><span class="lineno"> 6815</span>      <span class="keywordflow">if</span> (dispose == 3) { <span class="comment">// use previous graphic</span></div>
 <div class="line"><a id="l06816" name="l06816"></a><span class="lineno"> 6816</span>         <span class="keywordflow">for</span> (pi = 0; pi &lt; pcount; ++pi) {</div>
-<div class="line"><a id="l06817" name="l06817"></a><span class="lineno"> 6817</span>            <span class="keywordflow">if</span> (g-&gt;history[pi]) {</div>
-<div class="line"><a id="l06818" name="l06818"></a><span class="lineno"> 6818</span>               memcpy( &amp;g-&gt;out[pi * 4], &amp;two_back[pi * 4], 4 );</div>
+<div class="line"><a id="l06817" name="l06817"></a><span class="lineno"> 6817</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history[pi]) {</div>
+<div class="line"><a id="l06818" name="l06818"></a><span class="lineno"> 6818</span>               memcpy( &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out[pi * 4], &amp;two_back[pi * 4], 4 );</div>
 <div class="line"><a id="l06819" name="l06819"></a><span class="lineno"> 6819</span>            }</div>
 <div class="line"><a id="l06820" name="l06820"></a><span class="lineno"> 6820</span>         }</div>
 <div class="line"><a id="l06821" name="l06821"></a><span class="lineno"> 6821</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (dispose == 2) {</div>
 <div class="line"><a id="l06822" name="l06822"></a><span class="lineno"> 6822</span>         <span class="comment">// restore what was changed last frame to background before that frame;</span></div>
 <div class="line"><a id="l06823" name="l06823"></a><span class="lineno"> 6823</span>         <span class="keywordflow">for</span> (pi = 0; pi &lt; pcount; ++pi) {</div>
-<div class="line"><a id="l06824" name="l06824"></a><span class="lineno"> 6824</span>            <span class="keywordflow">if</span> (g-&gt;history[pi]) {</div>
-<div class="line"><a id="l06825" name="l06825"></a><span class="lineno"> 6825</span>               memcpy( &amp;g-&gt;out[pi * 4], &amp;g-&gt;background[pi * 4], 4 );</div>
+<div class="line"><a id="l06824" name="l06824"></a><span class="lineno"> 6824</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history[pi]) {</div>
+<div class="line"><a id="l06825" name="l06825"></a><span class="lineno"> 6825</span>               memcpy( &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out[pi * 4], &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;background[pi * 4], 4 );</div>
 <div class="line"><a id="l06826" name="l06826"></a><span class="lineno"> 6826</span>            }</div>
 <div class="line"><a id="l06827" name="l06827"></a><span class="lineno"> 6827</span>         }</div>
 <div class="line"><a id="l06828" name="l06828"></a><span class="lineno"> 6828</span>      } <span class="keywordflow">else</span> {</div>
@@ -6919,11 +6919,11 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06833" name="l06833"></a><span class="lineno"> 6833</span>      }</div>
 <div class="line"><a id="l06834" name="l06834"></a><span class="lineno"> 6834</span> </div>
 <div class="line"><a id="l06835" name="l06835"></a><span class="lineno"> 6835</span>      <span class="comment">// background is what out is after the undoing of the previou frame;</span></div>
-<div class="line"><a id="l06836" name="l06836"></a><span class="lineno"> 6836</span>      memcpy( g-&gt;background, g-&gt;out, 4 * g-&gt;w * g-&gt;h );</div>
+<div class="line"><a id="l06836" name="l06836"></a><span class="lineno"> 6836</span>      memcpy( <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;background, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out, 4 * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h );</div>
 <div class="line"><a id="l06837" name="l06837"></a><span class="lineno"> 6837</span>   }</div>
 <div class="line"><a id="l06838" name="l06838"></a><span class="lineno"> 6838</span> </div>
 <div class="line"><a id="l06839" name="l06839"></a><span class="lineno"> 6839</span>   <span class="comment">// clear my history;</span></div>
-<div class="line"><a id="l06840" name="l06840"></a><span class="lineno"> 6840</span>   memset( g-&gt;history, 0x00, g-&gt;w * g-&gt;h );        <span class="comment">// pixels that were affected previous frame</span></div>
+<div class="line"><a id="l06840" name="l06840"></a><span class="lineno"> 6840</span>   memset( <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history, 0x00, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h );        <span class="comment">// pixels that were affected previous frame</span></div>
 <div class="line"><a id="l06841" name="l06841"></a><span class="lineno"> 6841</span> </div>
 <div class="line"><a id="l06842" name="l06842"></a><span class="lineno"> 6842</span>   <span class="keywordflow">for</span> (;;) {</div>
 <div class="line"><a id="l06843" name="l06843"></a><span class="lineno"> 6843</span>      <span class="keywordtype">int</span> tag = stbi__get8(s);</div>
@@ -6937,53 +6937,53 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06851" name="l06851"></a><span class="lineno"> 6851</span>            y = stbi__get16le(s);</div>
 <div class="line"><a id="l06852" name="l06852"></a><span class="lineno"> 6852</span>            w = stbi__get16le(s);</div>
 <div class="line"><a id="l06853" name="l06853"></a><span class="lineno"> 6853</span>            h = stbi__get16le(s);</div>
-<div class="line"><a id="l06854" name="l06854"></a><span class="lineno"> 6854</span>            <span class="keywordflow">if</span> (((x + w) &gt; (g-&gt;w)) || ((y + h) &gt; (g-&gt;h)))</div>
+<div class="line"><a id="l06854" name="l06854"></a><span class="lineno"> 6854</span>            <span class="keywordflow">if</span> (((x + w) &gt; (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w)) || ((y + h) &gt; (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h)))</div>
 <div class="line"><a id="l06855" name="l06855"></a><span class="lineno"> 6855</span>               <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;bad Image Descriptor&quot;</span>, <span class="stringliteral">&quot;Corrupt GIF&quot;</span>);</div>
 <div class="line"><a id="l06856" name="l06856"></a><span class="lineno"> 6856</span> </div>
-<div class="line"><a id="l06857" name="l06857"></a><span class="lineno"> 6857</span>            g-&gt;line_size = g-&gt;w * 4;</div>
-<div class="line"><a id="l06858" name="l06858"></a><span class="lineno"> 6858</span>            g-&gt;start_x = x * 4;</div>
-<div class="line"><a id="l06859" name="l06859"></a><span class="lineno"> 6859</span>            g-&gt;start_y = y * g-&gt;line_size;</div>
-<div class="line"><a id="l06860" name="l06860"></a><span class="lineno"> 6860</span>            g-&gt;max_x   = g-&gt;start_x + w * 4;</div>
-<div class="line"><a id="l06861" name="l06861"></a><span class="lineno"> 6861</span>            g-&gt;max_y   = g-&gt;start_y + h * g-&gt;line_size;</div>
-<div class="line"><a id="l06862" name="l06862"></a><span class="lineno"> 6862</span>            g-&gt;cur_x   = g-&gt;start_x;</div>
-<div class="line"><a id="l06863" name="l06863"></a><span class="lineno"> 6863</span>            g-&gt;cur_y   = g-&gt;start_y;</div>
+<div class="line"><a id="l06857" name="l06857"></a><span class="lineno"> 6857</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;line_size = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w * 4;</div>
+<div class="line"><a id="l06858" name="l06858"></a><span class="lineno"> 6858</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_x = x * 4;</div>
+<div class="line"><a id="l06859" name="l06859"></a><span class="lineno"> 6859</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_y = y * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;line_size;</div>
+<div class="line"><a id="l06860" name="l06860"></a><span class="lineno"> 6860</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;max_x   = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_x + w * 4;</div>
+<div class="line"><a id="l06861" name="l06861"></a><span class="lineno"> 6861</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;max_y   = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_y + h * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;line_size;</div>
+<div class="line"><a id="l06862" name="l06862"></a><span class="lineno"> 6862</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_x   = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_x;</div>
+<div class="line"><a id="l06863" name="l06863"></a><span class="lineno"> 6863</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y   = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;start_y;</div>
 <div class="line"><a id="l06864" name="l06864"></a><span class="lineno"> 6864</span> </div>
 <div class="line"><a id="l06865" name="l06865"></a><span class="lineno"> 6865</span>            <span class="comment">// if the width of the specified rectangle is 0, that means</span></div>
 <div class="line"><a id="l06866" name="l06866"></a><span class="lineno"> 6866</span>            <span class="comment">// we may not see *any* pixels or the image is malformed;</span></div>
 <div class="line"><a id="l06867" name="l06867"></a><span class="lineno"> 6867</span>            <span class="comment">// to make sure this is caught, move the current y down to</span></div>
 <div class="line"><a id="l06868" name="l06868"></a><span class="lineno"> 6868</span>            <span class="comment">// max_y (which is what out_gif_code checks).</span></div>
 <div class="line"><a id="l06869" name="l06869"></a><span class="lineno"> 6869</span>            <span class="keywordflow">if</span> (w == 0)</div>
-<div class="line"><a id="l06870" name="l06870"></a><span class="lineno"> 6870</span>               g-&gt;cur_y = g-&gt;max_y;</div>
+<div class="line"><a id="l06870" name="l06870"></a><span class="lineno"> 6870</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;cur_y = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;max_y;</div>
 <div class="line"><a id="l06871" name="l06871"></a><span class="lineno"> 6871</span> </div>
-<div class="line"><a id="l06872" name="l06872"></a><span class="lineno"> 6872</span>            g-&gt;lflags = stbi__get8(s);</div>
+<div class="line"><a id="l06872" name="l06872"></a><span class="lineno"> 6872</span>            <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;lflags = stbi__get8(s);</div>
 <div class="line"><a id="l06873" name="l06873"></a><span class="lineno"> 6873</span> </div>
-<div class="line"><a id="l06874" name="l06874"></a><span class="lineno"> 6874</span>            <span class="keywordflow">if</span> (g-&gt;lflags &amp; 0x40) {</div>
-<div class="line"><a id="l06875" name="l06875"></a><span class="lineno"> 6875</span>               g-&gt;step = 8 * g-&gt;line_size; <span class="comment">// first interlaced spacing</span></div>
-<div class="line"><a id="l06876" name="l06876"></a><span class="lineno"> 6876</span>               g-&gt;parse = 3;</div>
+<div class="line"><a id="l06874" name="l06874"></a><span class="lineno"> 6874</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;lflags &amp; 0x40) {</div>
+<div class="line"><a id="l06875" name="l06875"></a><span class="lineno"> 6875</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;step = 8 * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;line_size; <span class="comment">// first interlaced spacing</span></div>
+<div class="line"><a id="l06876" name="l06876"></a><span class="lineno"> 6876</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;parse = 3;</div>
 <div class="line"><a id="l06877" name="l06877"></a><span class="lineno"> 6877</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l06878" name="l06878"></a><span class="lineno"> 6878</span>               g-&gt;step = g-&gt;line_size;</div>
-<div class="line"><a id="l06879" name="l06879"></a><span class="lineno"> 6879</span>               g-&gt;parse = 0;</div>
+<div class="line"><a id="l06878" name="l06878"></a><span class="lineno"> 6878</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;step = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;line_size;</div>
+<div class="line"><a id="l06879" name="l06879"></a><span class="lineno"> 6879</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;parse = 0;</div>
 <div class="line"><a id="l06880" name="l06880"></a><span class="lineno"> 6880</span>            }</div>
 <div class="line"><a id="l06881" name="l06881"></a><span class="lineno"> 6881</span> </div>
-<div class="line"><a id="l06882" name="l06882"></a><span class="lineno"> 6882</span>            <span class="keywordflow">if</span> (g-&gt;lflags &amp; 0x80) {</div>
-<div class="line"><a id="l06883" name="l06883"></a><span class="lineno"> 6883</span>               stbi__gif_parse_colortable(s,g-&gt;lpal, 2 &lt;&lt; (g-&gt;lflags &amp; 7), g-&gt;eflags &amp; 0x01 ? g-&gt;transparent : -1);</div>
-<div class="line"><a id="l06884" name="l06884"></a><span class="lineno"> 6884</span>               g-&gt;color_table = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) g-&gt;lpal;</div>
-<div class="line"><a id="l06885" name="l06885"></a><span class="lineno"> 6885</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g-&gt;flags &amp; 0x80) {</div>
-<div class="line"><a id="l06886" name="l06886"></a><span class="lineno"> 6886</span>               g-&gt;color_table = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) g-&gt;pal;</div>
+<div class="line"><a id="l06882" name="l06882"></a><span class="lineno"> 6882</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;lflags &amp; 0x80) {</div>
+<div class="line"><a id="l06883" name="l06883"></a><span class="lineno"> 6883</span>               stbi__gif_parse_colortable(s,<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;lpal, 2 &lt;&lt; (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;lflags &amp; 7), <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;eflags &amp; 0x01 ? <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent : -1);</div>
+<div class="line"><a id="l06884" name="l06884"></a><span class="lineno"> 6884</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;color_table = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;lpal;</div>
+<div class="line"><a id="l06885" name="l06885"></a><span class="lineno"> 6885</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;flags &amp; 0x80) {</div>
+<div class="line"><a id="l06886" name="l06886"></a><span class="lineno"> 6886</span>               <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;color_table = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;pal;</div>
 <div class="line"><a id="l06887" name="l06887"></a><span class="lineno"> 6887</span>            } <span class="keywordflow">else</span></div>
 <div class="line"><a id="l06888" name="l06888"></a><span class="lineno"> 6888</span>               <span class="keywordflow">return</span> stbi__errpuc(<span class="stringliteral">&quot;missing color table&quot;</span>, <span class="stringliteral">&quot;Corrupt GIF&quot;</span>);</div>
 <div class="line"><a id="l06889" name="l06889"></a><span class="lineno"> 6889</span> </div>
-<div class="line"><a id="l06890" name="l06890"></a><span class="lineno"> 6890</span>            o = stbi__process_gif_raster(s, g);</div>
+<div class="line"><a id="l06890" name="l06890"></a><span class="lineno"> 6890</span>            o = stbi__process_gif_raster(s, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>);</div>
 <div class="line"><a id="l06891" name="l06891"></a><span class="lineno"> 6891</span>            <span class="keywordflow">if</span> (!o) <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a id="l06892" name="l06892"></a><span class="lineno"> 6892</span> </div>
 <div class="line"><a id="l06893" name="l06893"></a><span class="lineno"> 6893</span>            <span class="comment">// if this was the first frame,</span></div>
-<div class="line"><a id="l06894" name="l06894"></a><span class="lineno"> 6894</span>            pcount = g-&gt;w * g-&gt;h;</div>
-<div class="line"><a id="l06895" name="l06895"></a><span class="lineno"> 6895</span>            <span class="keywordflow">if</span> (first_frame &amp;&amp; (g-&gt;bgindex &gt; 0)) {</div>
+<div class="line"><a id="l06894" name="l06894"></a><span class="lineno"> 6894</span>            pcount = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;w * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;h;</div>
+<div class="line"><a id="l06895" name="l06895"></a><span class="lineno"> 6895</span>            <span class="keywordflow">if</span> (first_frame &amp;&amp; (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;bgindex &gt; 0)) {</div>
 <div class="line"><a id="l06896" name="l06896"></a><span class="lineno"> 6896</span>               <span class="comment">// if first frame, any pixel not drawn to gets the background color</span></div>
 <div class="line"><a id="l06897" name="l06897"></a><span class="lineno"> 6897</span>               <span class="keywordflow">for</span> (pi = 0; pi &lt; pcount; ++pi) {</div>
-<div class="line"><a id="l06898" name="l06898"></a><span class="lineno"> 6898</span>                  <span class="keywordflow">if</span> (g-&gt;history[pi] == 0) {</div>
-<div class="line"><a id="l06899" name="l06899"></a><span class="lineno"> 6899</span>                     g-&gt;pal[g-&gt;bgindex][3] = 255; <span class="comment">// just in case it was made transparent, undo that; It will be reset next frame if need be;</span></div>
-<div class="line"><a id="l06900" name="l06900"></a><span class="lineno"> 6900</span>                     memcpy( &amp;g-&gt;out[pi * 4], &amp;g-&gt;pal[g-&gt;bgindex], 4 );</div>
+<div class="line"><a id="l06898" name="l06898"></a><span class="lineno"> 6898</span>                  <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history[pi] == 0) {</div>
+<div class="line"><a id="l06899" name="l06899"></a><span class="lineno"> 6899</span>                     <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;pal[<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;bgindex][3] = 255; <span class="comment">// just in case it was made transparent, undo that; It will be reset next frame if need be;</span></div>
+<div class="line"><a id="l06900" name="l06900"></a><span class="lineno"> 6900</span>                     memcpy( &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out[pi * 4], &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;pal[<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;bgindex], 4 );</div>
 <div class="line"><a id="l06901" name="l06901"></a><span class="lineno"> 6901</span>                  }</div>
 <div class="line"><a id="l06902" name="l06902"></a><span class="lineno"> 6902</span>               }</div>
 <div class="line"><a id="l06903" name="l06903"></a><span class="lineno"> 6903</span>            }</div>
@@ -6998,22 +6998,22 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06912" name="l06912"></a><span class="lineno"> 6912</span>            <span class="keywordflow">if</span> (ext == 0xF9) { <span class="comment">// Graphic Control Extension.</span></div>
 <div class="line"><a id="l06913" name="l06913"></a><span class="lineno"> 6913</span>               len = stbi__get8(s);</div>
 <div class="line"><a id="l06914" name="l06914"></a><span class="lineno"> 6914</span>               <span class="keywordflow">if</span> (len == 4) {</div>
-<div class="line"><a id="l06915" name="l06915"></a><span class="lineno"> 6915</span>                  g-&gt;eflags = stbi__get8(s);</div>
-<div class="line"><a id="l06916" name="l06916"></a><span class="lineno"> 6916</span>                  g-&gt;delay = 10 * stbi__get16le(s); <span class="comment">// delay - 1/100th of a second, saving as 1/1000ths.</span></div>
+<div class="line"><a id="l06915" name="l06915"></a><span class="lineno"> 6915</span>                  <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;eflags = stbi__get8(s);</div>
+<div class="line"><a id="l06916" name="l06916"></a><span class="lineno"> 6916</span>                  <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;delay = 10 * stbi__get16le(s); <span class="comment">// delay - 1/100th of a second, saving as 1/1000ths.</span></div>
 <div class="line"><a id="l06917" name="l06917"></a><span class="lineno"> 6917</span> </div>
 <div class="line"><a id="l06918" name="l06918"></a><span class="lineno"> 6918</span>                  <span class="comment">// unset old transparent</span></div>
-<div class="line"><a id="l06919" name="l06919"></a><span class="lineno"> 6919</span>                  <span class="keywordflow">if</span> (g-&gt;transparent &gt;= 0) {</div>
-<div class="line"><a id="l06920" name="l06920"></a><span class="lineno"> 6920</span>                     g-&gt;pal[g-&gt;transparent][3] = 255;</div>
+<div class="line"><a id="l06919" name="l06919"></a><span class="lineno"> 6919</span>                  <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent &gt;= 0) {</div>
+<div class="line"><a id="l06920" name="l06920"></a><span class="lineno"> 6920</span>                     <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;pal[<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent][3] = 255;</div>
 <div class="line"><a id="l06921" name="l06921"></a><span class="lineno"> 6921</span>                  }</div>
-<div class="line"><a id="l06922" name="l06922"></a><span class="lineno"> 6922</span>                  <span class="keywordflow">if</span> (g-&gt;eflags &amp; 0x01) {</div>
-<div class="line"><a id="l06923" name="l06923"></a><span class="lineno"> 6923</span>                     g-&gt;transparent = stbi__get8(s);</div>
-<div class="line"><a id="l06924" name="l06924"></a><span class="lineno"> 6924</span>                     <span class="keywordflow">if</span> (g-&gt;transparent &gt;= 0) {</div>
-<div class="line"><a id="l06925" name="l06925"></a><span class="lineno"> 6925</span>                        g-&gt;pal[g-&gt;transparent][3] = 0;</div>
+<div class="line"><a id="l06922" name="l06922"></a><span class="lineno"> 6922</span>                  <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;eflags &amp; 0x01) {</div>
+<div class="line"><a id="l06923" name="l06923"></a><span class="lineno"> 6923</span>                     <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent = stbi__get8(s);</div>
+<div class="line"><a id="l06924" name="l06924"></a><span class="lineno"> 6924</span>                     <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent &gt;= 0) {</div>
+<div class="line"><a id="l06925" name="l06925"></a><span class="lineno"> 6925</span>                        <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;pal[<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent][3] = 0;</div>
 <div class="line"><a id="l06926" name="l06926"></a><span class="lineno"> 6926</span>                     }</div>
 <div class="line"><a id="l06927" name="l06927"></a><span class="lineno"> 6927</span>                  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l06928" name="l06928"></a><span class="lineno"> 6928</span>                     <span class="comment">// don&#39;t need transparent</span></div>
 <div class="line"><a id="l06929" name="l06929"></a><span class="lineno"> 6929</span>                     stbi__skip(s, 1);</div>
-<div class="line"><a id="l06930" name="l06930"></a><span class="lineno"> 6930</span>                     g-&gt;transparent = -1;</div>
+<div class="line"><a id="l06930" name="l06930"></a><span class="lineno"> 6930</span>                     <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;transparent = -1;</div>
 <div class="line"><a id="l06931" name="l06931"></a><span class="lineno"> 6931</span>                  }</div>
 <div class="line"><a id="l06932" name="l06932"></a><span class="lineno"> 6932</span>               } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l06933" name="l06933"></a><span class="lineno"> 6933</span>                  stbi__skip(s, len);</div>
@@ -7035,11 +7035,11 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06949" name="l06949"></a><span class="lineno"> 6949</span>   }</div>
 <div class="line"><a id="l06950" name="l06950"></a><span class="lineno"> 6950</span>}</div>
 <div class="line"><a id="l06951" name="l06951"></a><span class="lineno"> 6951</span> </div>
-<div class="line"><a id="l06952" name="l06952"></a><span class="lineno"> 6952</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__load_gif_main_outofmem(stbi__gif *g, <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *out, <span class="keywordtype">int</span> **delays)</div>
+<div class="line"><a id="l06952" name="l06952"></a><span class="lineno"> 6952</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__load_gif_main_outofmem(stbi__gif *<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *out, <span class="keywordtype">int</span> **delays)</div>
 <div class="line"><a id="l06953" name="l06953"></a><span class="lineno"> 6953</span>{</div>
-<div class="line"><a id="l06954" name="l06954"></a><span class="lineno"> 6954</span>   STBI_FREE(g-&gt;out);</div>
-<div class="line"><a id="l06955" name="l06955"></a><span class="lineno"> 6955</span>   STBI_FREE(g-&gt;history);</div>
-<div class="line"><a id="l06956" name="l06956"></a><span class="lineno"> 6956</span>   STBI_FREE(g-&gt;background);</div>
+<div class="line"><a id="l06954" name="l06954"></a><span class="lineno"> 6954</span>   STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;out);</div>
+<div class="line"><a id="l06955" name="l06955"></a><span class="lineno"> 6955</span>   STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;history);</div>
+<div class="line"><a id="l06956" name="l06956"></a><span class="lineno"> 6956</span>   STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>-&gt;background);</div>
 <div class="line"><a id="l06957" name="l06957"></a><span class="lineno"> 6957</span> </div>
 <div class="line"><a id="l06958" name="l06958"></a><span class="lineno"> 6958</span>   <span class="keywordflow">if</span> (out) STBI_FREE(out);</div>
 <div class="line"><a id="l06959" name="l06959"></a><span class="lineno"> 6959</span>   <span class="keywordflow">if</span> (delays &amp;&amp; *delays) STBI_FREE(*delays);</div>
@@ -7053,7 +7053,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06967" name="l06967"></a><span class="lineno"> 6967</span>      <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *u = 0;</div>
 <div class="line"><a id="l06968" name="l06968"></a><span class="lineno"> 6968</span>      <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *out = 0;</div>
 <div class="line"><a id="l06969" name="l06969"></a><span class="lineno"> 6969</span>      <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *two_back = 0;</div>
-<div class="line"><a id="l06970" name="l06970"></a><span class="lineno"> 6970</span>      stbi__gif g;</div>
+<div class="line"><a id="l06970" name="l06970"></a><span class="lineno"> 6970</span>      stbi__gif <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>;</div>
 <div class="line"><a id="l06971" name="l06971"></a><span class="lineno"> 6971</span>      <span class="keywordtype">int</span> stride;</div>
 <div class="line"><a id="l06972" name="l06972"></a><span class="lineno"> 6972</span>      <span class="keywordtype">int</span> out_size = 0;</div>
 <div class="line"><a id="l06973" name="l06973"></a><span class="lineno"> 6973</span>      <span class="keywordtype">int</span> delays_size = 0;</div>
@@ -7061,25 +7061,25 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l06975" name="l06975"></a><span class="lineno"> 6975</span>      STBI_NOTUSED(out_size);</div>
 <div class="line"><a id="l06976" name="l06976"></a><span class="lineno"> 6976</span>      STBI_NOTUSED(delays_size);</div>
 <div class="line"><a id="l06977" name="l06977"></a><span class="lineno"> 6977</span> </div>
-<div class="line"><a id="l06978" name="l06978"></a><span class="lineno"> 6978</span>      memset(&amp;g, 0, <span class="keyword">sizeof</span>(g));</div>
+<div class="line"><a id="l06978" name="l06978"></a><span class="lineno"> 6978</span>      memset(&amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>));</div>
 <div class="line"><a id="l06979" name="l06979"></a><span class="lineno"> 6979</span>      <span class="keywordflow">if</span> (delays) {</div>
 <div class="line"><a id="l06980" name="l06980"></a><span class="lineno"> 6980</span>         *delays = 0;</div>
 <div class="line"><a id="l06981" name="l06981"></a><span class="lineno"> 6981</span>      }</div>
 <div class="line"><a id="l06982" name="l06982"></a><span class="lineno"> 6982</span> </div>
 <div class="line"><a id="l06983" name="l06983"></a><span class="lineno"> 6983</span>      <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l06984" name="l06984"></a><span class="lineno"> 6984</span>         u = stbi__gif_load_next(s, &amp;g, comp, req_comp, two_back);</div>
+<div class="line"><a id="l06984" name="l06984"></a><span class="lineno"> 6984</span>         u = stbi__gif_load_next(s, &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, comp, req_comp, two_back);</div>
 <div class="line"><a id="l06985" name="l06985"></a><span class="lineno"> 6985</span>         <span class="keywordflow">if</span> (u == (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) s) u = 0;  <span class="comment">// end of animated gif marker</span></div>
 <div class="line"><a id="l06986" name="l06986"></a><span class="lineno"> 6986</span> </div>
 <div class="line"><a id="l06987" name="l06987"></a><span class="lineno"> 6987</span>         <span class="keywordflow">if</span> (u) {</div>
-<div class="line"><a id="l06988" name="l06988"></a><span class="lineno"> 6988</span>            *x = g.w;</div>
-<div class="line"><a id="l06989" name="l06989"></a><span class="lineno"> 6989</span>            *y = g.h;</div>
+<div class="line"><a id="l06988" name="l06988"></a><span class="lineno"> 6988</span>            *x = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.w;</div>
+<div class="line"><a id="l06989" name="l06989"></a><span class="lineno"> 6989</span>            *y = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.h;</div>
 <div class="line"><a id="l06990" name="l06990"></a><span class="lineno"> 6990</span>            ++layers;</div>
-<div class="line"><a id="l06991" name="l06991"></a><span class="lineno"> 6991</span>            stride = g.w * g.h * 4;</div>
+<div class="line"><a id="l06991" name="l06991"></a><span class="lineno"> 6991</span>            stride = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.w * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.h * 4;</div>
 <div class="line"><a id="l06992" name="l06992"></a><span class="lineno"> 6992</span> </div>
 <div class="line"><a id="l06993" name="l06993"></a><span class="lineno"> 6993</span>            <span class="keywordflow">if</span> (out) {</div>
 <div class="line"><a id="l06994" name="l06994"></a><span class="lineno"> 6994</span>               <span class="keywordtype">void</span> *tmp = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>*) STBI_REALLOC_SIZED( out, out_size, layers * stride );</div>
 <div class="line"><a id="l06995" name="l06995"></a><span class="lineno"> 6995</span>               <span class="keywordflow">if</span> (!tmp)</div>
-<div class="line"><a id="l06996" name="l06996"></a><span class="lineno"> 6996</span>                  <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;g, out, delays);</div>
+<div class="line"><a id="l06996" name="l06996"></a><span class="lineno"> 6996</span>                  <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, out, delays);</div>
 <div class="line"><a id="l06997" name="l06997"></a><span class="lineno"> 6997</span>               <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l06998" name="l06998"></a><span class="lineno"> 6998</span>                   out = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>*) tmp;</div>
 <div class="line"><a id="l06999" name="l06999"></a><span class="lineno"> 6999</span>                   out_size = layers * stride;</div>
@@ -7088,19 +7088,19 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l07002" name="l07002"></a><span class="lineno"> 7002</span>               <span class="keywordflow">if</span> (delays) {</div>
 <div class="line"><a id="l07003" name="l07003"></a><span class="lineno"> 7003</span>                  <span class="keywordtype">int</span> *new_delays = (<span class="keywordtype">int</span>*) STBI_REALLOC_SIZED( *delays, delays_size, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * layers );</div>
 <div class="line"><a id="l07004" name="l07004"></a><span class="lineno"> 7004</span>                  <span class="keywordflow">if</span> (!new_delays)</div>
-<div class="line"><a id="l07005" name="l07005"></a><span class="lineno"> 7005</span>                     <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;g, out, delays);</div>
+<div class="line"><a id="l07005" name="l07005"></a><span class="lineno"> 7005</span>                     <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, out, delays);</div>
 <div class="line"><a id="l07006" name="l07006"></a><span class="lineno"> 7006</span>                  *delays = new_delays;</div>
 <div class="line"><a id="l07007" name="l07007"></a><span class="lineno"> 7007</span>                  delays_size = layers * <span class="keyword">sizeof</span>(int);</div>
 <div class="line"><a id="l07008" name="l07008"></a><span class="lineno"> 7008</span>               }</div>
 <div class="line"><a id="l07009" name="l07009"></a><span class="lineno"> 7009</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l07010" name="l07010"></a><span class="lineno"> 7010</span>               out = (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>*)stbi__malloc( layers * stride );</div>
 <div class="line"><a id="l07011" name="l07011"></a><span class="lineno"> 7011</span>               <span class="keywordflow">if</span> (!out)</div>
-<div class="line"><a id="l07012" name="l07012"></a><span class="lineno"> 7012</span>                  <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;g, out, delays);</div>
+<div class="line"><a id="l07012" name="l07012"></a><span class="lineno"> 7012</span>                  <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, out, delays);</div>
 <div class="line"><a id="l07013" name="l07013"></a><span class="lineno"> 7013</span>               out_size = layers * stride;</div>
 <div class="line"><a id="l07014" name="l07014"></a><span class="lineno"> 7014</span>               <span class="keywordflow">if</span> (delays) {</div>
 <div class="line"><a id="l07015" name="l07015"></a><span class="lineno"> 7015</span>                  *delays = (<span class="keywordtype">int</span>*) stbi__malloc( layers * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) );</div>
 <div class="line"><a id="l07016" name="l07016"></a><span class="lineno"> 7016</span>                  <span class="keywordflow">if</span> (!*delays)</div>
-<div class="line"><a id="l07017" name="l07017"></a><span class="lineno"> 7017</span>                     <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;g, out, delays);</div>
+<div class="line"><a id="l07017" name="l07017"></a><span class="lineno"> 7017</span>                     <span class="keywordflow">return</span> stbi__load_gif_main_outofmem(&amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, out, delays);</div>
 <div class="line"><a id="l07018" name="l07018"></a><span class="lineno"> 7018</span>                  delays_size = layers * <span class="keyword">sizeof</span>(int);</div>
 <div class="line"><a id="l07019" name="l07019"></a><span class="lineno"> 7019</span>               }</div>
 <div class="line"><a id="l07020" name="l07020"></a><span class="lineno"> 7020</span>            }</div>
@@ -7110,19 +7110,19 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l07024" name="l07024"></a><span class="lineno"> 7024</span>            }</div>
 <div class="line"><a id="l07025" name="l07025"></a><span class="lineno"> 7025</span> </div>
 <div class="line"><a id="l07026" name="l07026"></a><span class="lineno"> 7026</span>            <span class="keywordflow">if</span> (delays) {</div>
-<div class="line"><a id="l07027" name="l07027"></a><span class="lineno"> 7027</span>               (*delays)[layers - 1U] = g.delay;</div>
+<div class="line"><a id="l07027" name="l07027"></a><span class="lineno"> 7027</span>               (*delays)[layers - 1U] = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.delay;</div>
 <div class="line"><a id="l07028" name="l07028"></a><span class="lineno"> 7028</span>            }</div>
 <div class="line"><a id="l07029" name="l07029"></a><span class="lineno"> 7029</span>         }</div>
 <div class="line"><a id="l07030" name="l07030"></a><span class="lineno"> 7030</span>      } <span class="keywordflow">while</span> (u != 0);</div>
 <div class="line"><a id="l07031" name="l07031"></a><span class="lineno"> 7031</span> </div>
 <div class="line"><a id="l07032" name="l07032"></a><span class="lineno"> 7032</span>      <span class="comment">// free temp buffer;</span></div>
-<div class="line"><a id="l07033" name="l07033"></a><span class="lineno"> 7033</span>      STBI_FREE(g.out);</div>
-<div class="line"><a id="l07034" name="l07034"></a><span class="lineno"> 7034</span>      STBI_FREE(g.history);</div>
-<div class="line"><a id="l07035" name="l07035"></a><span class="lineno"> 7035</span>      STBI_FREE(g.background);</div>
+<div class="line"><a id="l07033" name="l07033"></a><span class="lineno"> 7033</span>      STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.out);</div>
+<div class="line"><a id="l07034" name="l07034"></a><span class="lineno"> 7034</span>      STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.history);</div>
+<div class="line"><a id="l07035" name="l07035"></a><span class="lineno"> 7035</span>      STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.background);</div>
 <div class="line"><a id="l07036" name="l07036"></a><span class="lineno"> 7036</span> </div>
 <div class="line"><a id="l07037" name="l07037"></a><span class="lineno"> 7037</span>      <span class="comment">// do the final conversion after loading everything;</span></div>
 <div class="line"><a id="l07038" name="l07038"></a><span class="lineno"> 7038</span>      <span class="keywordflow">if</span> (req_comp &amp;&amp; req_comp != 4)</div>
-<div class="line"><a id="l07039" name="l07039"></a><span class="lineno"> 7039</span>         out = stbi__convert_format(out, 4, req_comp, layers * g.w, g.h);</div>
+<div class="line"><a id="l07039" name="l07039"></a><span class="lineno"> 7039</span>         out = stbi__convert_format(out, 4, req_comp, layers * <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.w, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.h);</div>
 <div class="line"><a id="l07040" name="l07040"></a><span class="lineno"> 7040</span> </div>
 <div class="line"><a id="l07041" name="l07041"></a><span class="lineno"> 7041</span>      *z = layers;</div>
 <div class="line"><a id="l07042" name="l07042"></a><span class="lineno"> 7042</span>      <span class="keywordflow">return</span> out;</div>
@@ -7134,28 +7134,28 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l07048" name="l07048"></a><span class="lineno"> 7048</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbi__gif_load(stbi__context *s, <span class="keywordtype">int</span> *x, <span class="keywordtype">int</span> *y, <span class="keywordtype">int</span> *comp, <span class="keywordtype">int</span> req_comp, stbi__result_info *ri)</div>
 <div class="line"><a id="l07049" name="l07049"></a><span class="lineno"> 7049</span>{</div>
 <div class="line"><a id="l07050" name="l07050"></a><span class="lineno"> 7050</span>   <a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *u = 0;</div>
-<div class="line"><a id="l07051" name="l07051"></a><span class="lineno"> 7051</span>   stbi__gif g;</div>
-<div class="line"><a id="l07052" name="l07052"></a><span class="lineno"> 7052</span>   memset(&amp;g, 0, <span class="keyword">sizeof</span>(g));</div>
+<div class="line"><a id="l07051" name="l07051"></a><span class="lineno"> 7051</span>   stbi__gif <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>;</div>
+<div class="line"><a id="l07052" name="l07052"></a><span class="lineno"> 7052</span>   memset(&amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>));</div>
 <div class="line"><a id="l07053" name="l07053"></a><span class="lineno"> 7053</span>   STBI_NOTUSED(ri);</div>
 <div class="line"><a id="l07054" name="l07054"></a><span class="lineno"> 7054</span> </div>
-<div class="line"><a id="l07055" name="l07055"></a><span class="lineno"> 7055</span>   u = stbi__gif_load_next(s, &amp;g, comp, req_comp, 0);</div>
+<div class="line"><a id="l07055" name="l07055"></a><span class="lineno"> 7055</span>   u = stbi__gif_load_next(s, &amp;<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>, comp, req_comp, 0);</div>
 <div class="line"><a id="l07056" name="l07056"></a><span class="lineno"> 7056</span>   <span class="keywordflow">if</span> (u == (<a class="code hl_typedef" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *) s) u = 0;  <span class="comment">// end of animated gif marker</span></div>
 <div class="line"><a id="l07057" name="l07057"></a><span class="lineno"> 7057</span>   <span class="keywordflow">if</span> (u) {</div>
-<div class="line"><a id="l07058" name="l07058"></a><span class="lineno"> 7058</span>      *x = g.w;</div>
-<div class="line"><a id="l07059" name="l07059"></a><span class="lineno"> 7059</span>      *y = g.h;</div>
+<div class="line"><a id="l07058" name="l07058"></a><span class="lineno"> 7058</span>      *x = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.w;</div>
+<div class="line"><a id="l07059" name="l07059"></a><span class="lineno"> 7059</span>      *y = <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.h;</div>
 <div class="line"><a id="l07060" name="l07060"></a><span class="lineno"> 7060</span> </div>
 <div class="line"><a id="l07061" name="l07061"></a><span class="lineno"> 7061</span>      <span class="comment">// moved conversion to after successful load so that the same</span></div>
 <div class="line"><a id="l07062" name="l07062"></a><span class="lineno"> 7062</span>      <span class="comment">// can be done for multiple frames.</span></div>
 <div class="line"><a id="l07063" name="l07063"></a><span class="lineno"> 7063</span>      <span class="keywordflow">if</span> (req_comp &amp;&amp; req_comp != 4)</div>
-<div class="line"><a id="l07064" name="l07064"></a><span class="lineno"> 7064</span>         u = stbi__convert_format(u, 4, req_comp, g.w, g.h);</div>
-<div class="line"><a id="l07065" name="l07065"></a><span class="lineno"> 7065</span>   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g.out) {</div>
+<div class="line"><a id="l07064" name="l07064"></a><span class="lineno"> 7064</span>         u = stbi__convert_format(u, 4, req_comp, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.w, <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.h);</div>
+<div class="line"><a id="l07065" name="l07065"></a><span class="lineno"> 7065</span>   } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.out) {</div>
 <div class="line"><a id="l07066" name="l07066"></a><span class="lineno"> 7066</span>      <span class="comment">// if there was an error and we allocated an image buffer, free it!</span></div>
-<div class="line"><a id="l07067" name="l07067"></a><span class="lineno"> 7067</span>      STBI_FREE(g.out);</div>
+<div class="line"><a id="l07067" name="l07067"></a><span class="lineno"> 7067</span>      STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.out);</div>
 <div class="line"><a id="l07068" name="l07068"></a><span class="lineno"> 7068</span>   }</div>
 <div class="line"><a id="l07069" name="l07069"></a><span class="lineno"> 7069</span> </div>
 <div class="line"><a id="l07070" name="l07070"></a><span class="lineno"> 7070</span>   <span class="comment">// free buffers needed for multiple frame loading;</span></div>
-<div class="line"><a id="l07071" name="l07071"></a><span class="lineno"> 7071</span>   STBI_FREE(g.history);</div>
-<div class="line"><a id="l07072" name="l07072"></a><span class="lineno"> 7072</span>   STBI_FREE(g.background);</div>
+<div class="line"><a id="l07071" name="l07071"></a><span class="lineno"> 7071</span>   STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.history);</div>
+<div class="line"><a id="l07072" name="l07072"></a><span class="lineno"> 7072</span>   STBI_FREE(<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a>.background);</div>
 <div class="line"><a id="l07073" name="l07073"></a><span class="lineno"> 7073</span> </div>
 <div class="line"><a id="l07074" name="l07074"></a><span class="lineno"> 7074</span>   <span class="keywordflow">return</span> u;</div>
 <div class="line"><a id="l07075" name="l07075"></a><span class="lineno"> 7075</span>}</div>
@@ -8073,7 +8073,8 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l07987" name="l07987"></a><span class="lineno"> 7987</span><span class="comment">------------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l07988" name="l07988"></a><span class="lineno"> 7988</span><span class="comment">*/</span></div>
 <div class="ttc" id="aconversion_8c_html_a5766ce3a19153daa7270bde04b438fd8"><div class="ttname"><a href="conversion_8c.html#a5766ce3a19153daa7270bde04b438fd8">f</a></div><div class="ttdeci">double f(double t)</div><div class="ttdef"><b>Definition</b> conversion.c:22</div></div>
-<div class="ttc" id="aconversion_8c_html_accb22fc8e3b46cd83ea68455442a28cf"><div class="ttname"><a href="conversion_8c.html#accb22fc8e3b46cd83ea68455442a28cf">delta</a></div><div class="ttdeci">double delta(int r1, int g1, int b1, int r2, int g2, int b2, int wishedTransformation)</div><div class="ttdoc">Calcule la différence de couleur de 2 pixelx.</div><div class="ttdef"><b>Definition</b> conversion.c:202</div></div>
+<div class="ttc" id="aconversion_8c_html_accb22fc8e3b46cd83ea68455442a28cf"><div class="ttname"><a href="conversion_8c.html#accb22fc8e3b46cd83ea68455442a28cf">delta</a></div><div class="ttdeci">double delta(int r1, int g1, int b1, int r2, int g2, int b2, int wishedTransformation)</div><div class="ttdoc">Calcule la différence de couleur de 2 pixelx.</div><div class="ttdef"><b>Definition</b> conversion.c:194</div></div>
+<div class="ttc" id="astack_8c_html_a922dfa137368f8fb7b2c01469ed9e9fa"><div class="ttname"><a href="stack_8c.html#a922dfa137368f8fb7b2c01469ed9e9fa">add</a></div><div class="ttdeci">void add(stack *stack, couple *elem)</div><div class="ttdef"><b>Definition</b> stack.c:25</div></div>
 <div class="ttc" id="astb__image_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029"><div class="ttname"><a href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029">STBI_default</a></div><div class="ttdeci">@ STBI_default</div><div class="ttdef"><b>Definition</b> stb_image.h:378</div></div>
 <div class="ttc" id="astb__image_8h_html_a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf"><div class="ttname"><a href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf">STBI_rgb</a></div><div class="ttdeci">@ STBI_rgb</div><div class="ttdef"><b>Definition</b> stb_image.h:382</div></div>
 <div class="ttc" id="astb__image_8h_html_a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293"><div class="ttname"><a href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293">STBI_rgb_alpha</a></div><div class="ttdeci">@ STBI_rgb_alpha</div><div class="ttdef"><b>Definition</b> stb_image.h:383</div></div>
@@ -8127,6 +8128,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="astb__image_8h_html_aff26696e30b62a40dd00bc12415343f6"><div class="ttname"><a href="stb__image_8h.html#aff26696e30b62a40dd00bc12415343f6">stbi_convert_iphone_png_to_rgb_thread</a></div><div class="ttdeci">STBIDEF void stbi_convert_iphone_png_to_rgb_thread(int flag_true_if_should_convert)</div></div>
 <div class="ttc" id="astructimage_html"><div class="ttname"><a href="structimage.html">image</a></div><div class="ttdoc">Cette structure représente une image.</div><div class="ttdef"><b>Definition</b> image.h:14</div></div>
 <div class="ttc" id="astructstbi__io__callbacks_html"><div class="ttname"><a href="structstbi__io__callbacks.html">stbi_io_callbacks</a></div><div class="ttdef"><b>Definition</b> stb_image.h:412</div></div>
+<div class="ttc" id="atransform__threading_8c_html_af009f3dd64d81172c730f0b836b8b3f1"><div class="ttname"><a href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a></div><div class="ttdeci">graph * g</div><div class="ttdef"><b>Definition</b> transform_threading.c:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

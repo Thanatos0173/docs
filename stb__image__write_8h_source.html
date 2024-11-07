@@ -915,9 +915,9 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="preprocessor">#define stbiw__sbcount(a)        ((a) ? stbiw__sbn(a) : 0)</span></div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="preprocessor">#define stbiw__sbfree(a)         ((a) ? STBIW_FREE(stbiw__sbraw(a)),0 : 0)</span></div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbiw__sbgrowf(<span class="keywordtype">void</span> **arr, <span class="keywordtype">int</span> increment, <span class="keywordtype">int</span> itemsize)</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="keyword">static</span> <span class="keywordtype">void</span> *stbiw__sbgrowf(<span class="keywordtype">void</span> **arr, <span class="keywordtype">int</span> <a class="code hl_function" href="conc__increment_8c.html#aeb2624c7a86b765725fd80cd426e147d">increment</a>, <span class="keywordtype">int</span> itemsize)</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>{</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>   <span class="keywordtype">int</span> m = *arr ? 2*stbiw__sbm(*arr)+increment : increment+1;</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>   <span class="keywordtype">int</span> m = *arr ? 2*stbiw__sbm(*arr)+<a class="code hl_function" href="conc__increment_8c.html#aeb2624c7a86b765725fd80cd426e147d">increment</a> : <a class="code hl_function" href="conc__increment_8c.html#aeb2624c7a86b765725fd80cd426e147d">increment</a>+1;</div>
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>   <span class="keywordtype">void</span> *p = STBIW_REALLOC_SIZED(*arr ? stbiw__sbraw(*arr) : 0, *arr ? (stbiw__sbm(*arr)*itemsize + <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)*2) : 0, itemsize * m + <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)*2);</div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>   STBIW_ASSERT(p);</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>   <span class="keywordflow">if</span> (p) {</div>
@@ -1633,10 +1633,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>                  <span class="keywordflow">for</span>(col = x; col &lt; x+16; ++col, ++pos) {</div>
 <div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>                     <span class="comment">// if col &gt;= width =&gt; use pixel from last input column</span></div>
 <div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>                     <span class="keywordtype">int</span> p = base_p + ((col &lt; width) ? col : (width-1))*comp;</div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>                     <span class="keywordtype">float</span> r = dataR[p], g = dataG[p], b = dataB[p];</div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>                     Y[pos]= +0.29900f*r + 0.58700f*g + 0.11400f*b - 128;</div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>                     U[pos]= -0.16874f*r - 0.33126f*g + 0.50000f*b;</div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>                     V[pos]= +0.50000f*r - 0.41869f*g - 0.08131f*b;</div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>                     <span class="keywordtype">float</span> r = dataR[p], <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = dataG[p], b = dataB[p];</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>                     Y[pos]= +0.29900f*r + 0.58700f*<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> + 0.11400f*b - 128;</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>                     U[pos]= -0.16874f*r - 0.33126f*<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> + 0.50000f*b;</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>                     V[pos]= +0.50000f*r - 0.41869f*<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> - 0.08131f*b;</div>
 <div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>                  }</div>
 <div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>               }</div>
 <div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>               DCY = stbiw__jpg_processDU(s, &amp;bitBuf, &amp;bitCnt, Y+0,   16, fdtbl_Y, DCY, YDC_HT, YAC_HT);</div>
@@ -1671,10 +1671,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span>                  <span class="keywordflow">for</span>(col = x; col &lt; x+8; ++col, ++pos) {</div>
 <div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span>                     <span class="comment">// if col &gt;= width =&gt; use pixel from last input column</span></div>
 <div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>                     <span class="keywordtype">int</span> p = base_p + ((col &lt; width) ? col : (width-1))*comp;</div>
-<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>                     <span class="keywordtype">float</span> r = dataR[p], g = dataG[p], b = dataB[p];</div>
-<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>                     Y[pos]= +0.29900f*r + 0.58700f*g + 0.11400f*b - 128;</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>                     U[pos]= -0.16874f*r - 0.33126f*g + 0.50000f*b;</div>
-<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>                     V[pos]= +0.50000f*r - 0.41869f*g - 0.08131f*b;</div>
+<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>                     <span class="keywordtype">float</span> r = dataR[p], <a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> = dataG[p], b = dataB[p];</div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>                     Y[pos]= +0.29900f*r + 0.58700f*<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> + 0.11400f*b - 128;</div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>                     U[pos]= -0.16874f*r - 0.33126f*<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> + 0.50000f*b;</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>                     V[pos]= +0.50000f*r - 0.41869f*<a class="code hl_variable" href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a> - 0.08131f*b;</div>
 <div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>                  }</div>
 <div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>               }</div>
 <div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span> </div>
@@ -1814,6 +1814,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span><span class="comment">WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span></div>
 <div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span><span class="comment">------------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span><span class="comment">*/</span></div>
+<div class="ttc" id="aconc__increment_8c_html_aeb2624c7a86b765725fd80cd426e147d"><div class="ttname"><a href="conc__increment_8c.html#aeb2624c7a86b765725fd80cd426e147d">increment</a></div><div class="ttdeci">void increment()</div><div class="ttdef"><b>Definition</b> conc_increment.c:12</div></div>
 <div class="ttc" id="aconversion_8c_html_a5766ce3a19153daa7270bde04b438fd8"><div class="ttname"><a href="conversion_8c.html#a5766ce3a19153daa7270bde04b438fd8">f</a></div><div class="ttdeci">double f(double t)</div><div class="ttdef"><b>Definition</b> conversion.c:22</div></div>
 <div class="ttc" id="astb__image__write_8h_html_a1d964457ebf7cc898b8cb14e66cbfaa8"><div class="ttname"><a href="stb__image__write_8h.html#a1d964457ebf7cc898b8cb14e66cbfaa8">STBIWDEF</a></div><div class="ttdeci">#define STBIWDEF</div><div class="ttdef"><b>Definition</b> stb_image_write.h:164</div></div>
 <div class="ttc" id="astb__image__write_8h_html_a21f22be0194761e08b682ed543ef6161"><div class="ttname"><a href="stb__image__write_8h.html#a21f22be0194761e08b682ed543ef6161">stbi_write_hdr</a></div><div class="ttdeci">STBIWDEF int stbi_write_hdr(char const *filename, int w, int h, int comp, const float *data)</div></div>
@@ -1831,6 +1832,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="astb__image__write_8h_html_aca9573665994b2244a6a045b2a1df1ea"><div class="ttname"><a href="stb__image__write_8h.html#aca9573665994b2244a6a045b2a1df1ea">stbi_write_bmp_to_func</a></div><div class="ttdeci">STBIWDEF int stbi_write_bmp_to_func(stbi_write_func *func, void *context, int w, int h, int comp, const void *data)</div></div>
 <div class="ttc" id="astb__image__write_8h_html_af4ce66fb7d4d97110036bf6e92e196bd"><div class="ttname"><a href="stb__image__write_8h.html#af4ce66fb7d4d97110036bf6e92e196bd">stbi_write_tga_with_rle</a></div><div class="ttdeci">STBIWDEF int stbi_write_tga_with_rle</div><div class="ttdef"><b>Definition</b> stb_image_write.h:170</div></div>
 <div class="ttc" id="astb__image__write_8h_html_afbe60a9afbcbd6d54f98f72afd46a676"><div class="ttname"><a href="stb__image__write_8h.html#afbe60a9afbcbd6d54f98f72afd46a676">stbi_write_jpg_to_func</a></div><div class="ttdeci">STBIWDEF int stbi_write_jpg_to_func(stbi_write_func *func, void *context, int x, int y, int comp, const void *data, int quality)</div></div>
+<div class="ttc" id="atransform__threading_8c_html_af009f3dd64d81172c730f0b836b8b3f1"><div class="ttname"><a href="transform__threading_8c.html#af009f3dd64d81172c730f0b836b8b3f1">g</a></div><div class="ttdeci">graph * g</div><div class="ttdef"><b>Definition</b> transform_threading.c:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

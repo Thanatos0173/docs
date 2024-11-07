@@ -6,5 +6,7 @@ var searchData=
   ['createfromtemplate_3',['createFromTemplate',['../image_8c.html#a5ccd2eec941ba19e0c3af4b37a0d319b',1,'image.c']]],
   ['creategraph_4',['createGraph',['../graph_8c.html#a6cf57aa120220ea918d655c079d0092c',1,'createGraph(int size):&#160;graph.c'],['../graph_8h.html#a6cf57aa120220ea918d655c079d0092c',1,'createGraph(int size):&#160;graph.c']]],
   ['createlist_5',['createList',['../list_8c.html#a3ddbb3eacacb940195c521d53f655c1e',1,'createList(int value):&#160;list.c'],['../list_8h.html#a3ddbb3eacacb940195c521d53f655c1e',1,'createList(int value):&#160;list.c']]],
-  ['createunifiedimage_6',['createUnifiedImage',['../image_8c.html#af258201ae5a443469cd1e09db0cc7243',1,'createUnifiedImage(int height, int width, int channels, unsigned int color):&#160;image.c'],['../image_8h.html#af258201ae5a443469cd1e09db0cc7243',1,'createUnifiedImage(int height, int width, int channels, unsigned int color):&#160;image.c']]]
+  ['createstack_6',['createStack',['../stack_8c.html#abb20aad414fbee13fd4df8b961c8aabf',1,'createStack(int n):&#160;stack.c'],['../stack_8h.html#abb20aad414fbee13fd4df8b961c8aabf',1,'createStack(int n):&#160;stack.c']]],
+  ['createunifiedimage_7',['createUnifiedImage',['../image_8c.html#af258201ae5a443469cd1e09db0cc7243',1,'createUnifiedImage(int height, int width, int channels, unsigned int color):&#160;image.c'],['../image_8h.html#af258201ae5a443469cd1e09db0cc7243',1,'createUnifiedImage(int height, int width, int channels, unsigned int color):&#160;image.c']]],
+  ['cstar_8',['Cstar',['../conversion_8c.html#a4204ed473c93af656a5411f90e19f015',1,'conversion.c']]]
 ];

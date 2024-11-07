@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['delta_0',['delta',['../conversion_8c.html#accb22fc8e3b46cd83ea68455442a28cf',1,'delta(int r1, int g1, int b1, int r2, int g2, int b2, int wishedTransformation):&#160;conversion.c'],['../conversion_8h.html#accb22fc8e3b46cd83ea68455442a28cf',1,'delta(int r1, int g1, int b1, int r2, int g2, int b2, int wishedTransformation):&#160;conversion.c']]],
-  ['documentation_20_3a_1',['Documentation :',['../index.html#autotoc_md4',1,'']]]
+  ['b_0',['b',['../structcouple.html#abfbe0708bcfc12ccd366db630921a3c6',1,'couple']]],
+  ['basic_20usage_1',['Basic usage',['..//home/thanatos/Scolarité/TPS/1A/Projet_Programmation/Image_Segmentation/types/C-Thread-Pool/README.md#autotoc_md13',1,'']]],
+  ['bsem_2',['bsem',['../structbsem.html',1,'bsem'],['../thpool_8c.html#a6d91482004cdcb54c540a277c74b153e',1,'bsem:&#160;thpool.c']]]
 ];

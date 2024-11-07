@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width_0',['width',['../structimage.html#ab04b2878a5fb02914526c06a817fb826',1,'image']]]
+  ['jobqueue_0',['jobqueue',['../structthpool__.html#a08d4a33fae889af4adc4e78d9e34602d',1,'thpool_']]]
 ];
